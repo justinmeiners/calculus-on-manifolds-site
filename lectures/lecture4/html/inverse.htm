@@ -1,0 +1,315 @@
+<HTML>
+<HEAD>
+<TITLE>Inverses and the Implicit Function Theorem</TITLE>
+</HEAD>
+<body bgcolor=#ffffff>
+<H1 ALIGN=CENTER>Lecture 4: The Inverse and the Implicit Function Theorems</H1>
+<p><b>Lemma 1:</b> Let 
+<img src="inverse1.png" alt="inverse1.png" align=absmiddle>
+ be defined and differentiable
+on a convex open set A.  Then for all 
+<img src="inverse2.png" alt="inverse2.png" align=absmiddle>
+, one has
+
+<P><CENTER>
+<img src="inverse3.png" alt="inverse3.png" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="inverse4.png" alt="inverse4.png" align=absmiddle>
+ is chosen to be an upper bound on all the 
+<img src="inverse5.png" alt="inverse5.png" align=absmiddle>
+ for all
+
+<img src="inverse6.png" alt="inverse6.png" align=absmiddle>
+, 
+<img src="inverse7.png" alt="inverse7.png" align=absmiddle>
+, and all 
+<img src="inverse8.png" alt="inverse8.png" align=absmiddle>
+.
+
+<p><b>Proof:</b> Let 
+<img src="inverse9.png" alt="inverse9.png" align=absmiddle>
+.  For each 
+<img src="inverse10.png" alt="inverse10.png" align=absmiddle>
+, the Mean Value
+Theorem says that there is a 
+<img src="inverse11.png" alt="inverse11.png" align=absmiddle>
+ between 0 and 1 such that
+
+<P><CENTER>
+<img src="inverse12.png" alt="inverse12.png" align=absmiddle>
+</CENTER><P>
+
+By the chain rule,
+
+<P><CENTER>
+<img src="inverse13.png" alt="inverse13.png" align=absmiddle>
+</CENTER><P>
+
+So,
+
+<P><CENTER>
+<img src="inverse14.png" alt="inverse14.png" align=absmiddle>
+</CENTER><P>
+
+<p><b>Theorem 1:</b> (Inverse Function Theorem) Let 
+<img src="inverse15.png" alt="inverse15.png" align=absmiddle>
+
+be continuously differentiable on an open subset containing 
+<img src="inverse16.png" alt="inverse16.png" align=absmiddle>
+.
+If 
+<img src="inverse17.png" alt="inverse17.png" align=absmiddle>
+, then there are open subsets 
+<img src="inverse18.png" alt="inverse18.png" align=absmiddle>
+ containing 
+<img src="inverse19.png" alt="inverse19.png" align=absmiddle>
+ and
+
+<img src="inverse20.png" alt="inverse20.png" align=absmiddle>
+ containing 
+<img src="inverse21.png" alt="inverse21.png" align=absmiddle>
+ such that 
+<img src="inverse22.png" alt="inverse22.png" align=absmiddle>
+ and there is an inverse
+
+<img src="inverse23.png" alt="inverse23.png" align=absmiddle>
+ which is differentiable with derivative satisfying:
+
+<P><CENTER>
+<img src="inverse24.png" alt="inverse24.png" align=absmiddle>
+</CENTER><P>
+
+
+<p><b>Exercise 1:</b> Show that Theorem 1 is true for linear functions.
+
+<p><b>Proof: (of Theorem 1)</b> By replacing 
+<img src="inverse25.png" alt="inverse25.png" align=absmiddle>
+ with 
+<img src="inverse26.png" alt="inverse26.png" align=absmiddle>
+, we
+can assume that 
+<img src="inverse27.png" alt="inverse27.png" align=absmiddle>
+ is the identity map (Why?).
+<p> Apply Lemma 1 to 
+<img src="inverse28.png" alt="inverse28.png" align=absmiddle>
+: 
+<img src="inverse29.png" alt="inverse29.png" align=absmiddle>
+
+for 
+<img src="inverse30.png" alt="inverse30.png" align=absmiddle>
+ and 
+<img src="inverse31.png" alt="inverse31.png" align=absmiddle>
+ in some open rectangle containing 
+<img src="inverse32.png" alt="inverse32.png" align=absmiddle>
+.  But then,
+
+<P><CENTER>
+<img src="inverse33.png" alt="inverse33.png" align=absmiddle>
+</CENTER><P>
+ Rearranging gives
+
+<P><CENTER>
+<img src="inverse34.png" alt="inverse34.png" align=absmiddle>
+</CENTER><P>
+
+<p> Since 
+<img src="inverse35.png" alt="inverse35.png" align=absmiddle>
+, 
+<img src="inverse36.png" alt="inverse36.png" align=absmiddle>
+ and so by choosing the rectangle
+small enough, we can assume that 
+<img src="inverse37.png" alt="inverse37.png" align=absmiddle>
+ and so
+
+<P><CENTER>
+<img src="inverse38.png" alt="inverse38.png" align=absmiddle>
+</CENTER><P>
+
+In particular, it follows that f is one-to-one when restricted to this
+rectangle, and the inverse will be continuous if it exists. 
+Replacing the rectangle with a smaller one, we can assume the
+same is true when f is restricted to the closure of the rectangle.  Now
+the boundary 
+<img src="inverse39.png" alt="inverse39.png" align=absmiddle>
+ of the rectangle is compact and so 
+<img src="inverse40.png" alt="inverse40.png" align=absmiddle>
+ is also compact
+and does not contain 
+<img src="inverse41.png" alt="inverse41.png" align=absmiddle>
+.  Let 
+<img src="inverse42.png" alt="inverse42.png" align=absmiddle>
+ be the minimum of 
+<img src="inverse43.png" alt="inverse43.png" align=absmiddle>
+
+for 
+<img src="inverse44.png" alt="inverse44.png" align=absmiddle>
+.  Let 
+<img src="inverse45.png" alt="inverse45.png" align=absmiddle>
+ be the set 
+<img src="inverse46.png" alt="inverse46.png" align=absmiddle>
+.
+
+<p> Now, for every 
+<img src="inverse47.png" alt="inverse47.png" align=absmiddle>
+, there is at least one 
+<img src="inverse48.png" alt="inverse48.png" align=absmiddle>
+ in the rectangle with
+
+<img src="inverse49.png" alt="inverse49.png" align=absmiddle>
+.  In fact, consider the  function 
+<img src="inverse50.png" alt="inverse50.png" align=absmiddle>
+.  The
+image of 
+<img src="inverse51.png" alt="inverse51.png" align=absmiddle>
+ under the closure of the rectangle.  The minimum of this
+function does not occur on 
+<img src="inverse52.png" alt="inverse52.png" align=absmiddle>
+ because 
+<img src="inverse53.png" alt="inverse53.png" align=absmiddle>
+.  So it must occur where
+the derivative is zero, i.e. one has:
+
+<P><CENTER>
+<img src="inverse54.png" alt="inverse54.png" align=absmiddle>
+</CENTER><P>
+
+for 
+<img src="inverse55.png" alt="inverse55.png" align=absmiddle>
+.  But by taking the rectangle sufficiently small, we can
+assume that 
+<img src="inverse56.png" alt="inverse56.png" align=absmiddle>
+ for all 
+<img src="inverse57.png" alt="inverse57.png" align=absmiddle>
+ in the rectangle.  But then
+the only solution of this system of linear equations is 
+<img src="inverse58.png" alt="inverse58.png" align=absmiddle>
+.
+<p> If 
+<img src="inverse59.png" alt="inverse59.png" align=absmiddle>
+, then 
+<img src="inverse60.png" alt="inverse60.png" align=absmiddle>
+ maps the open set 
+<img src="inverse61.png" alt="inverse61.png" align=absmiddle>
+ one-to-one and onto
+the open set 
+<img src="inverse62.png" alt="inverse62.png" align=absmiddle>
+.  It remains to check differentiability of the inverse.
+Since 
+<img src="inverse63.png" alt="inverse63.png" align=absmiddle>
+ is differentiable, one has for 
+<img src="inverse64.png" alt="inverse64.png" align=absmiddle>
+,
+
+<P><CENTER>
+<img src="inverse65.png" alt="inverse65.png" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="inverse66.png" alt="inverse66.png" align=absmiddle>
+.  Letting 
+<img src="inverse67.png" alt="inverse67.png" align=absmiddle>
+
+and 
+<img src="inverse68.png" alt="inverse68.png" align=absmiddle>
+, we get after substitution:
+
+<P><CENTER>
+<img src="inverse69.png" alt="inverse69.png" align=absmiddle>
+</CENTER><P>
+
+Rearranging gives:
+
+<P><CENTER>
+<img src="inverse70.png" alt="inverse70.png" align=absmiddle>
+</CENTER><P>
+
+It remains to show that
+
+<P><CENTER>
+<img src="inverse71.png" alt="inverse71.png" align=absmiddle>
+</CENTER><P>
+
+Since the derivative is just a linear function, it is enough to show that
+
+<img src="inverse72.png" alt="inverse72.png" align=absmiddle>
+.  As 
+<img src="inverse73.png" alt="inverse73.png" align=absmiddle>
+, we have
+
+<img src="inverse74.png" alt="inverse74.png" align=absmiddle>
+ because 
+<img src="inverse75.png" alt="inverse75.png" align=absmiddle>
+ is continuous.  So, 
+<img src="inverse76.png" alt="inverse76.png" align=absmiddle>
+.
+But we know that 
+<img src="inverse77.png" alt="inverse77.png" align=absmiddle>
+  So, the limit of the product
+is zero, as desired.
+
+<p><b>Note:</b> It follows from the formula for the derivative of the inverse
+that the inverse is also continuously differentiable.
+
+<p><b>Corollary 1:</b> (The Implicit Function Theorem) Let 
+<img src="inverse78.png" alt="inverse78.png" align=absmiddle>
+
+be continuously differentiable in an open set containing the point 
+<img src="inverse79.png" alt="inverse79.png" align=absmiddle>
+
+which satisfies 
+<img src="inverse80.png" alt="inverse80.png" align=absmiddle>
+.  Suppose that 
+<img src="inverse81.png" alt="inverse81.png" align=absmiddle>
+.
+Then there is a continuously differentiable function 
+<img src="inverse82.png" alt="inverse82.png" align=absmiddle>
+ mapping
+an open set 
+<img src="inverse83.png" alt="inverse83.png" align=absmiddle>
+ containing 
+<img src="inverse84.png" alt="inverse84.png" align=absmiddle>
+ to an open set
+
+<img src="inverse85.png" alt="inverse85.png" align=absmiddle>
+ containing 
+<img src="inverse86.png" alt="inverse86.png" align=absmiddle>
+ such that 
+<img src="inverse87.png" alt="inverse87.png" align=absmiddle>
+ for all
+
+<img src="inverse88.png" alt="inverse88.png" align=absmiddle>
+.
+<p><b>Proof:</b> We can extend 
+<img src="inverse89.png" alt="inverse89.png" align=absmiddle>
+ to a function 
+<img src="inverse90.png" alt="inverse90.png" align=absmiddle>
+
+by 
+<img src="inverse91.png" alt="inverse91.png" align=absmiddle>
+ and apply the Inverse Function Theorem to get
+an inverse 
+<img src="inverse92.png" alt="inverse92.png" align=absmiddle>
+ defined in an open subset containing 
+<img src="inverse93.png" alt="inverse93.png" align=absmiddle>
+ and mapping onto
+an open subset containing 
+<img src="inverse94.png" alt="inverse94.png" align=absmiddle>
+.  Let 
+<img src="inverse95.png" alt="inverse95.png" align=absmiddle>
+ where
+
+<img src="inverse96.png" alt="inverse96.png" align=absmiddle>
+ is the projection onto the last 
+<img src="inverse97.png" alt="inverse97.png" align=absmiddle>
+ coordinates of 
+<img src="inverse98.png" alt="inverse98.png" align=absmiddle>
+.
+Then one has 
+<img src="inverse99.png" alt="inverse99.png" align=absmiddle>
+.
+<p><b>Exercise 2:</b> Show that the Inverse Function  Theorem is a Corollary
+of the Implicit Function Theorem.
+</BODY>
+</HTML>

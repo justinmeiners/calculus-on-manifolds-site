@@ -1,0 +1,868 @@
+<HTML>
+<HEAD><TITLE>Differential Forms and Chains</TITLE></HEAD>
+<body bgcolor=#ffffff>
+<H1 ALIGN=CENTER>Differential Forms and Chains</H1>
+<H2>7.1 K-Tensors</H2>
+<p> This section is concerned with some algebraic preliminaries needed to
+give a formal definition of what we mean by a differenial form.
+<P><B>Definition 1:</B> Let 
+<img src="forms1.png" alt="forms1.png" align=absmiddle>
+ be a vector space over 
+<img src="forms2.png" alt="forms2.png" align=absmiddle>
+.  A function
+
+<img src="forms3.png" alt="forms3.png" align=absmiddle>
+ is said to be <B>k-multilinear</B> (or to be a <B>k-tensor
+</B>) if and only if it is linear in each of its k variables.  The set of
+all k-tensors over 
+<img src="forms4.png" alt="forms4.png" align=absmiddle>
+ is denoted 
+<img src="forms5.png" alt="forms5.png" align=absmiddle>
+.
+
+<P><B>Note:</B> 
+<img src="forms6.png" alt="forms6.png" align=absmiddle>
+ with the obvious operations is a vector
+space over 
+<img src="forms7.png" alt="forms7.png" align=absmiddle>
+.  One can define the <B>tensor product</B> function
+
+<img src="forms8.png" alt="forms8.png" align=absmiddle>
+ by
+
+<P><CENTER>
+<img src="forms9.png" alt="forms9.png" align=absmiddle>
+</CENTER><P>
+
+This is clearly a bilinear map, and the tensor product is associative.
+<P><B>Proposition 1:</B> The vector space 
+<img src="forms10.png" alt="forms10.png" align=absmiddle>
+ is of dimension
+
+<img src="forms11.png" alt="forms11.png" align=absmiddle>
+ where 
+<img src="forms12.png" alt="forms12.png" align=absmiddle>
+ is the dimension of 
+<img src="forms13.png" alt="forms13.png" align=absmiddle>
+.  In particular, if 
+<img src="forms14.png" alt="forms14.png" align=absmiddle>
+
+is a basis of 
+<img src="forms15.png" alt="forms15.png" align=absmiddle>
+, and 
+<img src="forms16.png" alt="forms16.png" align=absmiddle>
+ is the corresponding dual
+basis, then the 
+<img src="forms17.png" alt="forms17.png" align=absmiddle>
+ form a basis
+of 
+<img src="forms18.png" alt="forms18.png" align=absmiddle>
+.
+<P><B>Proof:</B> Clearly the tensor products are elements of 
+<img src="forms19.png" alt="forms19.png" align=absmiddle>
+.
+If 
+<img src="forms20.png" alt="forms20.png" align=absmiddle>
+ is a k-tensor, then it is easy to verify that
+
+<P><CENTER>
+<img src="forms21.png" alt="forms21.png" align=absmiddle>
+</CENTER><P>
+ 
+Finally, if
+
+<P><CENTER>
+<img src="forms22.png" alt="forms22.png" align=absmiddle>
+</CENTER><P>
+
+then evaluating the left side at 
+<img src="forms23.png" alt="forms23.png" align=absmiddle>
+ shows that
+
+<img src="forms24.png" alt="forms24.png" align=absmiddle>
+
+<P><B>Definition 2:</B> A k-tensor 
+<img src="forms25.png" alt="forms25.png" align=absmiddle>
+ over 
+<img src="forms26.png" alt="forms26.png" align=absmiddle>
+ is said to <B>alternating</B>
+if interchanging any two of its variables changes the sign of the functional
+value, i.e.
+
+<P><CENTER>
+<img src="forms27.png" alt="forms27.png" align=absmiddle>
+</CENTER><P>
+
+The set of alternating k-tensors over 
+<img src="forms28.png" alt="forms28.png" align=absmiddle>
+ is denoted 
+<img src="forms29.png" alt="forms29.png" align=absmiddle>
+.
+<P><B>Note:</B> Clearly, 
+<img src="forms30.png" alt="forms30.png" align=absmiddle>
+ is a vector subspace of 
+<img src="forms31.png" alt="forms31.png" align=absmiddle>
+
+For any k-tensor 
+<img src="forms32.png" alt="forms32.png" align=absmiddle>
+, one could make a <I>symmetric</I> k-tensor
+
+<P><CENTER>
+<img src="forms33.png" alt="forms33.png" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="forms34.png" alt="forms34.png" align=absmiddle>
+ is the set of all permutations of 
+<img src="forms35.png" alt="forms35.png" align=absmiddle>
+  If we let 
+<img src="forms36.png" alt="forms36.png" align=absmiddle>
+
+denote the sign of the permutation 
+<img src="forms37.png" alt="forms37.png" align=absmiddle>
+ (i.e. it is 1 or -1 depending on
+whether the permutation is a product of an even or odd number of transpositions), then
+it is not surprising that
+
+<P><CENTER>
+<img src="forms38.png" alt="forms38.png" align=absmiddle>
+</CENTER><P>
+
+should be alternating.   In fact, one has:
+<P><B>Proposition 2:</B>
+<OL>
+<LI> If 
+<img src="forms39.png" alt="forms39.png" align=absmiddle>
+ then 
+<img src="forms40.png" alt="forms40.png" align=absmiddle>
+
+<LI> If 
+<img src="forms41.png" alt="forms41.png" align=absmiddle>
+ then 
+<img src="forms42.png" alt="forms42.png" align=absmiddle>
+
+<LI> If 
+<img src="forms43.png" alt="forms43.png" align=absmiddle>
+ then 
+<img src="forms44.png" alt="forms44.png" align=absmiddle>
+
+</OL>
+<P><B>Proof:</B> This is a straightforward consequence of the definitions.
+<P><B>Definition 3:</B> The <B>wedge</B> product is the map 
+
+<img src="forms45.png" alt="forms45.png" align=absmiddle>
+ defined by
+
+<P><CENTER>
+<img src="forms46.png" alt="forms46.png" align=absmiddle>
+</CENTER><P>
+
+<P>For any linear map 
+<img src="forms47.png" alt="forms47.png" align=absmiddle>
+, there is a natural map 
+<img src="forms48.png" alt="forms48.png" align=absmiddle>
+
+defined by 
+<img src="forms49.png" alt="forms49.png" align=absmiddle>
+  Restricting this
+to alternating k-tensors gives another map (also denoted by the same symbol)
+
+<img src="forms50.png" alt="forms50.png" align=absmiddle>
+  The following is an easy exercise:
+<P><B>Proposition 3:</B> The wedge product is a bilinear map satisfying
+<OL>
+<LI> 
+<img src="forms51.png" alt="forms51.png" align=absmiddle>
+
+<LI> 
+<img src="forms52.png" alt="forms52.png" align=absmiddle>
+
+</OL>
+<P> The wedge product is also associative:
+<P><B>Proposition 4:</B>
+<OL> 
+<LI> If 
+<img src="forms53.png" alt="forms53.png" align=absmiddle>
+ and 
+<img src="forms54.png" alt="forms54.png" align=absmiddle>
+, then
+
+<P><CENTER>
+<img src="forms55.png" alt="forms55.png" align=absmiddle>
+</CENTER><P>
+
+provided that 
+<img src="forms56.png" alt="forms56.png" align=absmiddle>
+
+<LI> 
+<img src="forms57.png" alt="forms57.png" align=absmiddle>
+
+<LI> If 
+<img src="forms58.png" alt="forms58.png" align=absmiddle>
+, and 
+<img src="forms59.png" alt="forms59.png" align=absmiddle>
+ then
+
+<P><CENTER>
+<img src="forms60.png" alt="forms60.png" align=absmiddle>
+</CENTER><P>
+
+</OL>
+<P><B>Proof:</B> Let 
+<img src="forms61.png" alt="forms61.png" align=absmiddle>
+ be the group of all permutations on 
+<img src="forms62.png" alt="forms62.png" align=absmiddle>
+
+and 
+<img src="forms63.png" alt="forms63.png" align=absmiddle>
+ be the subgroup of permutations which fix 
+<img src="forms64.png" alt="forms64.png" align=absmiddle>
+.  Then 
+the cosets of 
+<img src="forms65.png" alt="forms65.png" align=absmiddle>
+ in 
+<img src="forms66.png" alt="forms66.png" align=absmiddle>
+ are mutually disjoint and so one can write 
+<img src="forms67.png" alt="forms67.png" align=absmiddle>
+ as a disjoint
+union 
+<img src="forms68.png" alt="forms68.png" align=absmiddle>
+  for a certain set 
+<img src="forms69.png" alt="forms69.png" align=absmiddle>
+ of elements of 
+<img src="forms70.png" alt="forms70.png" align=absmiddle>
+
+One has
+
+<P><CENTER>
+<img src="forms71.png" alt="forms71.png" align=absmiddle>
+</CENTER><P>
+
+<P>For the second assertion, apply the first result with 
+<img src="forms72.png" alt="forms72.png" align=absmiddle>
+
+and 
+<img src="forms73.png" alt="forms73.png" align=absmiddle>
+  The fact that 
+<img src="forms74.png" alt="forms74.png" align=absmiddle>
+ follows from the fact that 
+<img src="forms75.png" alt="forms75.png" align=absmiddle>
+
+is idempotent.  Similarly, one can apply the first result with 
+<img src="forms76.png" alt="forms76.png" align=absmiddle>
+
+and 
+<img src="forms77.png" alt="forms77.png" align=absmiddle>
+
+<P>The final assertion follows from the second and the definition of the
+wedge product.
+<P><B>Proposition 5:</B> The vector space 
+<img src="forms78.png" alt="forms78.png" align=absmiddle>
+ is of dimension
+
+<img src="forms79.png" alt="forms79.png" align=absmiddle>
+ where 
+<img src="forms80.png" alt="forms80.png" align=absmiddle>
+ is the dimension
+of the vector space 
+<img src="forms81.png" alt="forms81.png" align=absmiddle>
+.  In particular, if 
+<img src="forms82.png" alt="forms82.png" align=absmiddle>
+ is
+a dual basis, then the 
+<img src="forms83.png" alt="forms83.png" align=absmiddle>
+ where
+
+<img src="forms84.png" alt="forms84.png" align=absmiddle>
+ form a basis for 
+<img src="forms85.png" alt="forms85.png" align=absmiddle>
+
+<P><B>Proof:</B> To show that the set spans 
+<img src="forms86.png" alt="forms86.png" align=absmiddle>
+, apply 
+<img src="forms87.png" alt="forms87.png" align=absmiddle>
+ to
+an expression for the alternating k-tensor in terms of the basis
+of Proposition 1.  The linear independense is shown analogously to the
+argument of Proposition 1.
+<P><B>Proposition 6:</B> Let 
+<img src="forms88.png" alt="forms88.png" align=absmiddle>
+ be a basis of the vector space
+
+<img src="forms89.png" alt="forms89.png" align=absmiddle>
+ and 
+<img src="forms90.png" alt="forms90.png" align=absmiddle>
+.  If 
+<img src="forms91.png" alt="forms91.png" align=absmiddle>
+ then
+
+<P><CENTER>
+<img src="forms92.png" alt="forms92.png" align=absmiddle>
+</CENTER><P>
+
+<P><B>Proof:</B> Proposition 5 says that 
+<img src="forms93.png" alt="forms93.png" align=absmiddle>
+ is of
+dimension 1, and the determinant function is the a non-zero alternating
+n-tensor.  But 
+<img src="forms94.png" alt="forms94.png" align=absmiddle>
+ can be thought
+of as an alternating n-tensor on 
+<img src="forms95.png" alt="forms95.png" align=absmiddle>
+.  So it is a constant
+multiple of 
+<img src="forms96.png" alt="forms96.png" align=absmiddle>
+.  Substituting 
+<img src="forms97.png" alt="forms97.png" align=absmiddle>
+, shows that
+the constant must be 
+<img src="forms98.png" alt="forms98.png" align=absmiddle>
+.
+<H2> 7.2 Vector Fields and Differential Forms</H2>
+Any function 
+<img src="forms99.png" alt="forms99.png" align=absmiddle>
+ can be viewed as a function
+which assigns to each point in 
+<img src="forms100.png" alt="forms100.png" align=absmiddle>
+ a vector in 
+<img src="forms101.png" alt="forms101.png" align=absmiddle>
+.
+There are several possible interpretations of the target space.  Here
+are two:
+<OL>
+<LI> Each point 
+<img src="forms102.png" alt="forms102.png" align=absmiddle>
+, has a <B>tangent space</B> whose
+elements are of the form 
+<img src="forms103.png" alt="forms103.png" align=absmiddle>
+ where 
+<img src="forms104.png" alt="forms104.png" align=absmiddle>
+.  So the
+map 
+<img src="forms105.png" alt="forms105.png" align=absmiddle>
+ can be viewed as assigning to
+each point an vector in its tangent space.  When we view 
+<img src="forms106.png" alt="forms106.png" align=absmiddle>
+ in this
+way, we call it a <B>vector field</B>.
+<LI> To each point 
+<img src="forms107.png" alt="forms107.png" align=absmiddle>
+, we can associate a copy 
+<img src="forms108.png" alt="forms108.png" align=absmiddle>
+
+denoted 
+<img src="forms109.png" alt="forms109.png" align=absmiddle>
+ whose elements are alternating k-tensors
+in the tangent space at 
+<img src="forms110.png" alt="forms110.png" align=absmiddle>
+.   When we view the function 
+<img src="forms111.png" alt="forms111.png" align=absmiddle>
+ as mapping
+points to alternating k-tensors of the tangent space at 
+<img src="forms112.png" alt="forms112.png" align=absmiddle>
+, we call 
+<img src="forms113.png" alt="forms113.png" align=absmiddle>
+
+a <B>k-form</B> (or differential form) on 
+<img src="forms114.png" alt="forms114.png" align=absmiddle>
+.
+</OL>
+<P>In both cases we can express the vectors in terms of a standard basis,
+and so we have a certain number of coodinate functions.  When these
+coordinate functions are continuous, differential, etc., we call the
+vector field or k-form continuous, differentiable, etc.  To simplify the
+hypotheses, we will henceforth use the word <i>differentiable</i> to
+mean 
+<img src="forms115.png" alt="forms115.png" align=absmiddle>
+.
+
+<P><B>Definition 4:</B> If 
+<img src="forms116.png" alt="forms116.png" align=absmiddle>
+ is differentiable,
+the 1-form 
+<img src="forms117.png" alt="forms117.png" align=absmiddle>
+ is defined by
+
+<P><CENTER>
+<img src="forms118.png" alt="forms118.png" align=absmiddle>
+</CENTER><P>
+
+for 
+<img src="forms119.png" alt="forms119.png" align=absmiddle>
+.  In the special case of the projection 
+<img src="forms120.png" alt="forms120.png" align=absmiddle>
+, one
+denotes 
+<img src="forms121.png" alt="forms121.png" align=absmiddle>
+ as 
+<img src="forms122.png" alt="forms122.png" align=absmiddle>
+.
+<P><B>Note:</B> 
+<img src="forms123.png" alt="forms123.png" align=absmiddle>
+ and
+so 
+<img src="forms124.png" alt="forms124.png" align=absmiddle>
+ is the dual basis to 
+<img src="forms125.png" alt="forms125.png" align=absmiddle>
+  In
+particular, we will usually write k-forms as
+
+<P><CENTER>
+<img src="forms126.png" alt="forms126.png" align=absmiddle>
+</CENTER><P>
+
+<P> An immediate consequence of this notation is:
+<P><B>Proposition 7:</B> If 
+<img src="forms127.png" alt="forms127.png" align=absmiddle>
+ is differentiable,
+then
+
+<P><CENTER>
+<img src="forms128.png" alt="forms128.png" align=absmiddle>
+</CENTER><P>
+
+<P> The next definition tells us how to do substitutions in k-forms:
+<P><B>Definition 5:</B> Let 
+<img src="forms129.png" alt="forms129.png" align=absmiddle>
+ is a differentiable
+function and 
+<img src="forms130.png" alt="forms130.png" align=absmiddle>
+ be the linear transformation
+defined by its derivative at 
+<img src="forms131.png" alt="forms131.png" align=absmiddle>
+.  This map can be viewed as mapping the
+tangent spaces, i.e. we have a function 
+<img src="forms132.png" alt="forms132.png" align=absmiddle>
+
+defined by 
+
+<P><CENTER>
+<img src="forms133.png" alt="forms133.png" align=absmiddle>
+</CENTER><P>
+
+Now, 
+<img src="forms134.png" alt="forms134.png" align=absmiddle>
+ defines 
+<img src="forms135.png" alt="forms135.png" align=absmiddle>
+.
+If 
+<img src="forms136.png" alt="forms136.png" align=absmiddle>
+ is a k-form on 
+<img src="forms137.png" alt="forms137.png" align=absmiddle>
+, then 
+<img src="forms138.png" alt="forms138.png" align=absmiddle>
+ is the
+k-form on 
+<img src="forms139.png" alt="forms139.png" align=absmiddle>
+ defined by 
+
+<P><CENTER>
+<img src="forms140.png" alt="forms140.png" align=absmiddle>
+</CENTER><P>
+
+<P><B>Note:</B> To be more explicit, for 
+<img src="forms141.png" alt="forms141.png" align=absmiddle>
+ one
+has
+
+<P><CENTER>
+<img src="forms142.png" alt="forms142.png" align=absmiddle>
+</CENTER><P>
+
+<P> The next proposition tells us how to compute substitutions:
+<P><B>Proposition 8:</B> If 
+<img src="forms143.png" alt="forms143.png" align=absmiddle>
+ is differentiable,
+then
+<OL>
+<LI> 
+<img src="forms144.png" alt="forms144.png" align=absmiddle>
+
+<LI> 
+<img src="forms145.png" alt="forms145.png" align=absmiddle>
+
+<LI> 
+<img src="forms146.png" alt="forms146.png" align=absmiddle>
+
+<LI> 
+<img src="forms147.png" alt="forms147.png" align=absmiddle>
+
+<LI> If 
+<img src="forms148.png" alt="forms148.png" align=absmiddle>
+, then
+
+<P><CENTER>
+<img src="forms149.png" alt="forms149.png" align=absmiddle>
+</CENTER><P>
+
+</OL>
+<P><B>Proof:</B> Should be here.
+<P> Definition 4 can be extended to higher order forms as follows:
+<P><B>Definition 6:</B> Given a differentiable k-form
+
+<P><CENTER>
+<img src="forms150.png" alt="forms150.png" align=absmiddle>
+</CENTER><P>
+
+the <B>differential</B> of 
+<img src="forms151.png" alt="forms151.png" align=absmiddle>
+ is the (k+1)-form defined by
+
+<P><CENTER>
+<img src="forms152.png" alt="forms152.png" align=absmiddle>
+</CENTER><P>
+
+<P> To calculate differentials of k_forms, one has:
+<P><B>Proposition 9:</B>
+<OL>
+<LI> 
+<img src="forms153.png" alt="forms153.png" align=absmiddle>
+
+<LI> If 
+<img src="forms154.png" alt="forms154.png" align=absmiddle>
+ is a 
+<img src="forms155.png" alt="forms155.png" align=absmiddle>
+-form and 
+<img src="forms156.png" alt="forms156.png" align=absmiddle>
+ is an 
+<img src="forms157.png" alt="forms157.png" align=absmiddle>
+-form, then
+
+<P><CENTER>
+<img src="forms158.png" alt="forms158.png" align=absmiddle>
+</CENTER><P>
+
+<LI> 
+<img src="forms159.png" alt="forms159.png" align=absmiddle>
+
+<LI> If 
+<img src="forms160.png" alt="forms160.png" align=absmiddle>
+ is a 
+<img src="forms161.png" alt="forms161.png" align=absmiddle>
+-form on 
+<img src="forms162.png" alt="forms162.png" align=absmiddle>
+ and 
+<img src="forms163.png" alt="forms163.png" align=absmiddle>
+
+is differentiable, then 
+<img src="forms164.png" alt="forms164.png" align=absmiddle>
+
+</OL>
+<P><B>Proof:</B> The first assertion is obvious from the definition, and the
+second asesertion follows from the formula for differentiating a product and
+assertion (1) of Proposition 3.  The third assertion follows from assertion
+(1) of Proposition 3 and the equality of mixed partials:
+
+<P><CENTER>
+<img src="forms165.png" alt="forms165.png" align=absmiddle>
+</CENTER><P>
+
+<P> This leaves the last assertion.  The case of 0-forms is just the chain
+rule.  Assume that the assertion is true for all 
+<img src="forms166.png" alt="forms166.png" align=absmiddle>
+-forms 
+<img src="forms167.png" alt="forms167.png" align=absmiddle>
+; then it
+suffices  to show it for 
+<img src="forms168.png" alt="forms168.png" align=absmiddle>
+.  One has
+
+<P><CENTER>
+<img src="forms169.png" alt="forms169.png" align=absmiddle>
+</CENTER><P>
+
+On the other hand,
+
+<P><CENTER>
+<img src="forms170.png" alt="forms170.png" align=absmiddle>
+</CENTER><P>
+
+This proves the result since
+
+<P><CENTER>
+<img src="forms171.png" alt="forms171.png" align=absmiddle>
+</CENTER><P>
+
+where we have used equality of mixed partials.
+<H2>7.3 Integrals over Chains</H2>
+<P><B>Definition 7:</B> A <B>singular n-cube</B> in 
+<img src="forms172.png" alt="forms172.png" align=absmiddle>
+
+is a continuous function 
+<img src="forms173.png" alt="forms173.png" align=absmiddle>
+.  The convention in case 
+<img src="forms174.png" alt="forms174.png" align=absmiddle>
+, is
+that 
+<img src="forms175.png" alt="forms175.png" align=absmiddle>
+ and 
+<img src="forms176.png" alt="forms176.png" align=absmiddle>
+ are both the set 
+<img src="forms177.png" alt="forms177.png" align=absmiddle>
+.  A singular 1-cube
+is called a <B>curve</B>.  The <B>standard n-cube</B> is the inclusion map
+of 
+<img src="forms178.png" alt="forms178.png" align=absmiddle>
+  An <B>n-chain</B> a linear combination with integer
+coefficients of singular n-cubes (i.e. an element of the free Abelian group
+generated by the singular n-cubes).
+<P> Given the standard n-cube 
+<img src="forms179.png" alt="forms179.png" align=absmiddle>
+, for 
+<img src="forms180.png" alt="forms180.png" align=absmiddle>
+ and 
+<img src="forms181.png" alt="forms181.png" align=absmiddle>
+ the
+singular (n-1) cube 
+<img src="forms182.png" alt="forms182.png" align=absmiddle>
+ by 
+<img src="forms183.png" alt="forms183.png" align=absmiddle>
+ where 
+<img src="forms184.png" alt="forms184.png" align=absmiddle>
+
+is defined by
+
+<img src="forms185.png" alt="forms185.png" align=absmiddle>
+
+In the case where 
+<img src="forms186.png" alt="forms186.png" align=absmiddle>
+, the singular n-cube 
+<img src="forms187.png" alt="forms187.png" align=absmiddle>
+ is
+called the <B>
+<img src="forms188.png" alt="forms188.png" align=absmiddle>
+-face</B> of 
+<img src="forms189.png" alt="forms189.png" align=absmiddle>
+.  The <B>boundary</B> 
+<img src="forms190.png" alt="forms190.png" align=absmiddle>
+
+of 
+<img src="forms191.png" alt="forms191.png" align=absmiddle>
+ is defined by 
+
+<P><CENTER>
+<img src="forms192.png" alt="forms192.png" align=absmiddle>
+</CENTER><P>
+
+<P> The <B>
+<img src="forms193.png" alt="forms193.png" align=absmiddle>
+-face</B> of a singular n-cube 
+<img src="forms194.png" alt="forms194.png" align=absmiddle>
+ is 
+the composition 
+<img src="forms195.png" alt="forms195.png" align=absmiddle>
+  The <B>boundary</B>
+of 
+<img src="forms196.png" alt="forms196.png" align=absmiddle>
+ is the (n-1)-chain
+
+<P><CENTER>
+<img src="forms197.png" alt="forms197.png" align=absmiddle>
+</CENTER><P>
+
+Finally, the <B>boundary of an n-chain</B> 
+<img src="forms198.png" alt="forms198.png" align=absmiddle>
+ is defined to be the
+(n-1)-chain
+
+<P><CENTER>
+<img src="forms199.png" alt="forms199.png" align=absmiddle>
+</CENTER><P>
+
+<P>The signs have been set up to guarantee
+<P><B>Proposition 10:</B> If 
+<img src="forms200.png" alt="forms200.png" align=absmiddle>
+ is an 
+<img src="forms201.png" alt="forms201.png" align=absmiddle>
+-chain in 
+<img src="forms202.png" alt="forms202.png" align=absmiddle>
+, then 
+<img src="forms203.png" alt="forms203.png" align=absmiddle>
+
+<P><B>Proof:</B> The proof is straightforward.  The idea is that taking an
+
+<img src="forms204.png" alt="forms204.png" align=absmiddle>
+-face of a 
+<img src="forms205.png" alt="forms205.png" align=absmiddle>
+-face is the same as taking the 
+<img src="forms206.png" alt="forms206.png" align=absmiddle>
+-face of an 
+<img src="forms207.png" alt="forms207.png" align=absmiddle>
+-face.  So,
+it is just a matter of checking that the signs come out right.
+<P> We are now ready to define integrals of differential forms over chains:
+<P><B>Definition 8:</B> 
+<OL>
+<LI> If 
+<img src="forms208.png" alt="forms208.png" align=absmiddle>
+ is a 
+<img src="forms209.png" alt="forms209.png" align=absmiddle>
+-form on 
+<img src="forms210.png" alt="forms210.png" align=absmiddle>
+, then 
+<img src="forms211.png" alt="forms211.png" align=absmiddle>
+
+for some unique function 
+<img src="forms212.png" alt="forms212.png" align=absmiddle>
+.  Define
+
+<P><CENTER>
+<img src="forms213.png" alt="forms213.png" align=absmiddle>
+</CENTER><P>
+
+which can be written
+
+<P><CENTER>
+<img src="forms214.png" alt="forms214.png" align=absmiddle>
+</CENTER><P>
+
+In the case of a 0-form, define the integral to be 
+<img src="forms215.png" alt="forms215.png" align=absmiddle>
+
+<LI> If 
+<img src="forms216.png" alt="forms216.png" align=absmiddle>
+ is a 
+<img src="forms217.png" alt="forms217.png" align=absmiddle>
+-form on 
+<img src="forms218.png" alt="forms218.png" align=absmiddle>
+ and 
+<img src="forms219.png" alt="forms219.png" align=absmiddle>
+ is a singular 
+<img src="forms220.png" alt="forms220.png" align=absmiddle>
+-cube in 
+<img src="forms221.png" alt="forms221.png" align=absmiddle>
+,
+define
+
+<P><CENTER>
+<img src="forms222.png" alt="forms222.png" align=absmiddle>
+</CENTER><P>
+
+In the case of a 0-form, define the integral to be 
+<img src="forms223.png" alt="forms223.png" align=absmiddle>
+
+<LI> If 
+<img src="forms224.png" alt="forms224.png" align=absmiddle>
+ is a 
+<img src="forms225.png" alt="forms225.png" align=absmiddle>
+-form on 
+<img src="forms226.png" alt="forms226.png" align=absmiddle>
+ and 
+<img src="forms227.png" alt="forms227.png" align=absmiddle>
+ is a
+
+<img src="forms228.png" alt="forms228.png" align=absmiddle>
+-chain in 
+<img src="forms229.png" alt="forms229.png" align=absmiddle>
+, define
+
+<P><CENTER>
+<img src="forms230.png" alt="forms230.png" align=absmiddle>
+</CENTER><P>
+
+</OL>
+<P><B>Note:</B> In the special case of a standard 
+<img src="forms231.png" alt="forms231.png" align=absmiddle>
+-cube 
+<img src="forms232.png" alt="forms232.png" align=absmiddle>
+, the integral of
+
+<img src="forms233.png" alt="forms233.png" align=absmiddle>
+ over 
+<img src="forms234.png" alt="forms234.png" align=absmiddle>
+ is equal to the integral of
+<img src="forms235.png" alt="forms235.png" align=absmiddle>
+ over the 
+<img src="forms236.png" alt="forms236.png" align=absmiddle>
+
+An integral of a 1-form (respectively 2-form) over a 1-chain (respectively
+2-chain) is often referred to as a <B>line integral</B> (respectively <B>
+surface integral</B>).
+<H2> 7.4 Stokes' Theorem</H2>
+<P>The main theorem of the course is:
+<P><B>Theorem 1:</B> (Stokes' Theorem) If 
+<img src="forms237.png" alt="forms237.png" align=absmiddle>
+ is a 
+<img src="forms238.png" alt="forms238.png" align=absmiddle>
+-form on an
+open set 
+<img src="forms239.png" alt="forms239.png" align=absmiddle>
+ and 
+<img src="forms240.png" alt="forms240.png" align=absmiddle>
+ is a 
+<img src="forms241.png" alt="forms241.png" align=absmiddle>
+-chain in 
+<img src="forms242.png" alt="forms242.png" align=absmiddle>
+, then
+
+<P><CENTER>
+<img src="forms243.png" alt="forms243.png" align=absmiddle>
+</CENTER><P>
+
+<P><B>Proof:</B> First consider the case where 
+<img src="forms244.png" alt="forms244.png" align=absmiddle>
+ and 
+<img src="forms245.png" alt="forms245.png" align=absmiddle>
+ is
+a 
+<img src="forms246.png" alt="forms246.png" align=absmiddle>
+-form on 
+<img src="forms247.png" alt="forms247.png" align=absmiddle>
+  Using additivity, it is clearly enough to
+consider the case where 
+<img src="forms248.png" alt="forms248.png" align=absmiddle>
+
+<P> One has
+
+<P><CENTER>
+<img src="forms249.png" alt="forms249.png" align=absmiddle>
+</CENTER><P>
+
+It follows that
+
+<P><CENTER>
+<img src="forms250.png" alt="forms250.png" align=absmiddle>
+</CENTER><P>
+
+<P> Considering the other side of the equation,
+
+<P><CENTER>
+<img src="forms251.png" alt="forms251.png" align=absmiddle>
+</CENTER><P>
+
+Using Fubini's Theorem and the one dimensional Fundamental Theorem of 
+Calculus, to evaluate this:
+
+<P><CENTER>
+<img src="forms252.png" alt="forms252.png" align=absmiddle>
+</CENTER><P>
+
+which is the same result as we had before.  So the result holds in this case.
+<P> Now consider the case of a singular 
+<img src="forms253.png" alt="forms253.png" align=absmiddle>
+-cube 
+<img src="forms254.png" alt="forms254.png" align=absmiddle>
+.  One has by definition:
+
+<P><CENTER>
+<img src="forms255.png" alt="forms255.png" align=absmiddle>
+</CENTER><P>
+
+And so,
+
+<P><CENTER>
+<img src="forms256.png" alt="forms256.png" align=absmiddle>
+</CENTER><P>
+
+<P> Finally, in the general case where 
+<img src="forms257.png" alt="forms257.png" align=absmiddle>
+ is a 
+<img src="forms258.png" alt="forms258.png" align=absmiddle>
+-chain, one has
+
+<P><CENTER>
+<img src="forms259.png" alt="forms259.png" align=absmiddle>
+</CENTER><P>
+
+</BODY>
+</HTML>

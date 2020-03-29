@@ -1,0 +1,661 @@
+<HTML>
+<HEAD>
+<TITLE>Compact Sets and Continuous Functions</TITLE>
+</HEAD>
+<body bgcolor=#ffffff>
+<CENTER>
+<H1>Lecture 2: Compact Sets and Continuous Functions</H1>
+</CENTER>
+<H2>2.1 Topological Preliminaries</H2>
+
+<p> What does it mean for a function to be continuous?  
+An elementary calculus course would define:
+<p><b>Definition 1:</b> Let 
+<img src="compact1.jpg" alt="compact1.jpg" align=absmiddle>
+ and 
+<img src="compact2.jpg" alt="compact2.jpg" align=absmiddle>
+ be a
+function.  Let 
+<img src="compact3.jpg" alt="compact3.jpg" align=absmiddle>
+ and 
+<img src="compact4.jpg" alt="compact4.jpg" align=absmiddle>
+.  The function 
+<img src="compact5.jpg" alt="compact5.jpg" align=absmiddle>
+ has limit 
+<img src="compact6.jpg" alt="compact6.jpg" align=absmiddle>
+
+as x approaches a if for every 
+<img src="compact7.jpg" alt="compact7.jpg" align=absmiddle>
+,
+there is a 
+<img src="compact8.jpg" alt="compact8.jpg" align=absmiddle>
+ such that for every 
+<img src="compact9.jpg" alt="compact9.jpg" align=absmiddle>
+ with 
+<img src="compact10.jpg" alt="compact10.jpg" align=absmiddle>
+,
+one has 
+<img src="compact11.jpg" alt="compact11.jpg" align=absmiddle>
+.  This is expressed as
+
+<P><CENTER>
+<img src="compact12.jpg" alt="compact12.jpg" align=absmiddle>
+</CENTER><P>
+
+<p><b>Definition 2:</b>The function f is said to be continuous at 
+<img src="compact13.jpg" alt="compact13.jpg" align=absmiddle>
+ if
+
+<P><CENTER>
+<img src="compact14.jpg" alt="compact14.jpg" align=absmiddle>
+</CENTER><P>
+
+
+On the other hand, in a first topology course, one might define:
+<p><b>Definition 3:</b> A topological space is a pair (X, 
+<img src="compact15.jpg" alt="compact15.jpg" align=absmiddle>
+) where
+X is a set and 
+<img src="compact16.jpg" alt="compact16.jpg" align=absmiddle>
+ is a collection of subsets of X (called the open
+sets of the topological space) such that
+<ol>
+<li>The Union of any number of open sets is an open set. 
+<li>The Intersection of a finite number of open set is an open set and. 
+<li>Both X and the empty set are open. 
+</ol>
+<p> As an abbreviation, we speak of the topological space X when we don't
+need to refer to 
+<img src="compact17.jpg" alt="compact17.jpg" align=absmiddle>
+.  A set is closed if its complement is open.
+<p><b>Exercise 1:</b> If (X, 
+<img src="compact18.jpg" alt="compact18.jpg" align=absmiddle>
+) is a topological space and 
+<img src="compact19.jpg" alt="compact19.jpg" align=absmiddle>
+,
+then (A, 
+<img src="compact20.jpg" alt="compact20.jpg" align=absmiddle>
+) is also a topological space.
+We say that this is the topology induced on A by the topology on X.
+<p><b>Definition 4:</b> A function 
+<img src="compact21.jpg" alt="compact21.jpg" align=absmiddle>
+ of topological spaces
+is continuous if for every open subset 
+<img src="compact22.jpg" alt="compact22.jpg" align=absmiddle>
+ of 
+<img src="compact23.jpg" alt="compact23.jpg" align=absmiddle>
+, 
+<img src="compact24.jpg" alt="compact24.jpg" align=absmiddle>
+ is an open subset
+of X.
+
+<p><b>Definition 5:</b>An open rectangle 
+<img src="compact25.jpg" alt="compact25.jpg" align=absmiddle>
+ is defined to be a subset of 
+<img src="compact26.jpg" alt="compact26.jpg" align=absmiddle>
+
+of the form
+
+<img src="compact27.jpg" alt="compact27.jpg" align=absmiddle>
+, i.e. There are real numbers
+
+<img src="compact28.jpg" alt="compact28.jpg" align=absmiddle>
+ and 
+<img src="compact29.jpg" alt="compact29.jpg" align=absmiddle>
+ where 
+<img src="compact30.jpg" alt="compact30.jpg" align=absmiddle>
+ for all i
+and 
+
+<P><CENTER>
+<img src="compact31.jpg" alt="compact31.jpg" align=absmiddle>
+</CENTER><P>
+
+<p> In the case of 
+<img src="compact32.jpg" alt="compact32.jpg" align=absmiddle>
+, we can define a topology by saying that a subset 
+<img src="compact33.jpg" alt="compact33.jpg" align=absmiddle>
+
+of 
+<img src="compact34.jpg" alt="compact34.jpg" align=absmiddle>
+ is open if every point 
+<img src="compact35.jpg" alt="compact35.jpg" align=absmiddle>
+ is contained in an open rectangle 
+<img src="compact36.jpg" alt="compact36.jpg" align=absmiddle>
+
+which is entirely contained in 
+<img src="compact37.jpg" alt="compact37.jpg" align=absmiddle>
+.  We call this the <i>usual</i> topology of
+
+<img src="compact38.jpg" alt="compact38.jpg" align=absmiddle>
+ and for any subset 
+<img src="compact39.jpg" alt="compact39.jpg" align=absmiddle>
+ of 
+<img src="compact40.jpg" alt="compact40.jpg" align=absmiddle>
+, the induced topology is called the 
+<i>usual</i> topology of 
+<img src="compact41.jpg" alt="compact41.jpg" align=absmiddle>
+.
+<p><b>Exercise 2:</b> Make a reasonable definition of closed rectangle.  Prove
+that open rectangles are open sets and closed rectangles are closed sets.
+<p><b>Exercise 3:</b> Instead of rectangles, we could have used open balls.
+Show that the resulting topology would be the same.
+<p> We are now ready for:
+<p><b>Proposition 1:</b> With the usual topology on 
+<img src="compact42.jpg" alt="compact42.jpg" align=absmiddle>
+ and 
+<img src="compact43.jpg" alt="compact43.jpg" align=absmiddle>
+, the two
+notions of continuous function are equivalent.
+<p><b>Proof:</b> This is easy if you did Exercise 3.
+<H2>2.2 Compact Sets</H2>
+<p>The most important theorem in one variable calculus is:
+<p><b>Theorem 1:</b> (Mean Value Theorem) If 
+<img src="compact44.jpg" alt="compact44.jpg" align=absmiddle>
+
+(where 
+<img src="compact45.jpg" alt="compact45.jpg" align=absmiddle>
+) is continuous on 
+<img src="compact46.jpg" alt="compact46.jpg" align=absmiddle>
+ and differentiable on 
+<img src="compact47.jpg" alt="compact47.jpg" align=absmiddle>
+, then
+there is at least one 
+<img src="compact48.jpg" alt="compact48.jpg" align=absmiddle>
+ satisfying
+
+<P><CENTER>
+<img src="compact49.jpg" alt="compact49.jpg" align=absmiddle>
+</CENTER><P>
+
+<p>The principal ingredient of the proof of this theorem is:
+<p><b>Theorem 2:</b> (Extreme Value Theorem) Every continuous function
+
+<img src="compact50.jpg" alt="compact50.jpg" align=absmiddle>
+ (where 
+<img src="compact51.jpg" alt="compact51.jpg" align=absmiddle>
+ has at least one absolute
+minimum and at least one absolute maximum.
+<p> Usually, in an elementary calculus course, one proves the Mean Value
+Theorem, but not the Extreme Value Theorem -- the second result is usually
+taken to be <i>intuitively</i> obvious.  Actually, this is a rather subtle
+and difficult result.  To begin with, let us note that in fact, the
+Extreme Value Theorem holds when the interval 
+<img src="compact52.jpg" alt="compact52.jpg" align=absmiddle>
+ is replaced with
+a closed and bounded subset of the real numbers, where bounded is defined as:
+<p><b>Definition 6:</b> A subset 
+<img src="compact53.jpg" alt="compact53.jpg" align=absmiddle>
+ of 
+<img src="compact54.jpg" alt="compact54.jpg" align=absmiddle>
+ is said to be
+bounded if it is contained ins ome open rectangle.
+<p><b>Exercise 4:</b> Find counterexamples to Theorem 2 if you either just
+assume that the interval is not closed or that it is not bounded.
+<p><b>Definition 7:</b> A cover for a subset 
+<img src="compact55.jpg" alt="compact55.jpg" align=absmiddle>
+ of a topological space X
+is simply any collection 
+<img src="compact56.jpg" alt="compact56.jpg" align=absmiddle>
+ of subsets of X whose union contains
+
+<img src="compact57.jpg" alt="compact57.jpg" align=absmiddle>
+.  The cover is called open (respectively finite) if the subsets are all
+open (respectively are finite in number).
+<p><b>Definition 8:</b> A subset A of a topological space X is said to be
+compact if every open cover of A contains a finite subcover (i.e. a finite
+subset of the cover is itself a cover).
+<p><b>Proposition 2:</b> If 
+<img src="compact58.jpg" alt="compact58.jpg" align=absmiddle>
+ is continuous and 
+<img src="compact59.jpg" alt="compact59.jpg" align=absmiddle>
+
+is compact, then so is 
+<img src="compact60.jpg" alt="compact60.jpg" align=absmiddle>
+.
+<p><b>Proof:</b> If 
+<img src="compact61.jpg" alt="compact61.jpg" align=absmiddle>
+ is an open cover of 
+<img src="compact62.jpg" alt="compact62.jpg" align=absmiddle>
+, then 
+
+<img src="compact63.jpg" alt="compact63.jpg" align=absmiddle>
+ is an open cover of A (Why?).
+Since 
+<img src="compact64.jpg" alt="compact64.jpg" align=absmiddle>
+ is compact, 
+<img src="compact65.jpg" alt="compact65.jpg" align=absmiddle>
+ has a finite subcover,
+say 
+<img src="compact66.jpg" alt="compact66.jpg" align=absmiddle>
+, where the 
+<img src="compact67.jpg" alt="compact67.jpg" align=absmiddle>
+ are all in 
+<img src="compact68.jpg" alt="compact68.jpg" align=absmiddle>
+.
+Now, one can verify that 
+<img src="compact69.jpg" alt="compact69.jpg" align=absmiddle>
+ form a finite cover of 
+<img src="compact70.jpg" alt="compact70.jpg" align=absmiddle>
+.
+<p><b>Exercise 5:</b> With the usual topology on 
+<img src="compact71.jpg" alt="compact71.jpg" align=absmiddle>
+, if 
+<img src="compact72.jpg" alt="compact72.jpg" align=absmiddle>
+
+is compact, then 
+<img src="compact73.jpg" alt="compact73.jpg" align=absmiddle>
+ is both closed and bounded.
+<p><b>Theorem 5:</b> (Heine-Borel Theorem) With the usual topology on 
+<img src="compact74.jpg" alt="compact74.jpg" align=absmiddle>
+,
+a subset 
+<img src="compact75.jpg" alt="compact75.jpg" align=absmiddle>
+ of 
+<img src="compact76.jpg" alt="compact76.jpg" align=absmiddle>
+ is compact if and only if it both closed and bounded.
+<p><b>Note:</b> The Extreme Value Theorem follows:  If 
+<img src="compact77.jpg" alt="compact77.jpg" align=absmiddle>
+
+is continuous, then 
+<img src="compact78.jpg" alt="compact78.jpg" align=absmiddle>
+ is the image of a compact set and so is compact
+by Proposition 2.  So, it is both closed and bounded by Exercise 5.  In
+particular, the least upper bound of 
+<img src="compact79.jpg" alt="compact79.jpg" align=absmiddle>
+ (which exists by the
+completeness property of the real numbers) is in 
+<img src="compact80.jpg" alt="compact80.jpg" align=absmiddle>
+ (Why?).  So,
+
+<img src="compact81.jpg" alt="compact81.jpg" align=absmiddle>
+ has an absolute maximum.  
+<p>The Heine-Borel Theorem can be proved in at least two ways.  The first
+method proceeds by building up larger and larger sets which are known to
+be compact.  One starts with Lemma 1 below and then uses Lemma 2
+to inductively conclude that any closed rectangle is compact.  Finally,
+Lemma 3 completes the proof.
+<p><b>Lemma 1:</b> A closed interval 
+<img src="compact82.jpg" alt="compact82.jpg" align=absmiddle>
+ is compact.
+<p><b>Proof:</b> Let 
+<img src="compact83.jpg" alt="compact83.jpg" align=absmiddle>
+ be an open cover of 
+<img src="compact84.jpg" alt="compact84.jpg" align=absmiddle>
+ (assumed 
+non-empty).  The set 
+<img src="compact85.jpg" alt="compact85.jpg" align=absmiddle>
+ of all 
+<img src="compact86.jpg" alt="compact86.jpg" align=absmiddle>
+ such that 
+<img src="compact87.jpg" alt="compact87.jpg" align=absmiddle>
+ contains
+a finite subcover of 
+<img src="compact88.jpg" alt="compact88.jpg" align=absmiddle>
+ is bounded.  So it has a least upper bound, say 
+<img src="compact89.jpg" alt="compact89.jpg" align=absmiddle>
+.
+Let 
+<img src="compact90.jpg" alt="compact90.jpg" align=absmiddle>
+ contain 
+<img src="compact91.jpg" alt="compact91.jpg" align=absmiddle>
+ and hence an open interval 
+<img src="compact92.jpg" alt="compact92.jpg" align=absmiddle>
+ containing 
+<img src="compact93.jpg" alt="compact93.jpg" align=absmiddle>
+.
+Choose 
+<img src="compact94.jpg" alt="compact94.jpg" align=absmiddle>
+ in this open interval.  Then 
+<img src="compact95.jpg" alt="compact95.jpg" align=absmiddle>
+ and so there is a finite
+subcover 
+<img src="compact96.jpg" alt="compact96.jpg" align=absmiddle>
+ of 
+<img src="compact97.jpg" alt="compact97.jpg" align=absmiddle>
+.  But then
+
+<img src="compact98.jpg" alt="compact98.jpg" align=absmiddle>
+ is a finite subcover of 
+<img src="compact99.jpg" alt="compact99.jpg" align=absmiddle>
+ for
+any 
+<img src="compact100.jpg" alt="compact100.jpg" align=absmiddle>
+ contrary to the choice of 
+<img src="compact101.jpg" alt="compact101.jpg" align=absmiddle>
+.
+<p><b>Lemma 2:</b> If 
+<img src="compact102.jpg" alt="compact102.jpg" align=absmiddle>
+ and 
+<img src="compact103.jpg" alt="compact103.jpg" align=absmiddle>
+
+are compact, then so is 
+<img src="compact104.jpg" alt="compact104.jpg" align=absmiddle>
+.
+<p><b>Proof:</b> Suppose 
+<img src="compact105.jpg" alt="compact105.jpg" align=absmiddle>
+ is an open cover of 
+<img src="compact106.jpg" alt="compact106.jpg" align=absmiddle>
+.
+If 
+<img src="compact107.jpg" alt="compact107.jpg" align=absmiddle>
+, 
+<img src="compact108.jpg" alt="compact108.jpg" align=absmiddle>
+ is compact.  Further, 
+<img src="compact109.jpg" alt="compact109.jpg" align=absmiddle>
+ is also an open cover of 
+<img src="compact110.jpg" alt="compact110.jpg" align=absmiddle>
+
+and so this set has a finite subcover 
+<img src="compact111.jpg" alt="compact111.jpg" align=absmiddle>
+.
+For every 
+<img src="compact112.jpg" alt="compact112.jpg" align=absmiddle>
+, there is an open rectangle 
+<img src="compact113.jpg" alt="compact113.jpg" align=absmiddle>
+ containing 
+<img src="compact114.jpg" alt="compact114.jpg" align=absmiddle>
+ and contained
+in some one of the 
+<img src="compact115.jpg" alt="compact115.jpg" align=absmiddle>
+; the set of these is rectangles is an open cover of
+
+<img src="compact116.jpg" alt="compact116.jpg" align=absmiddle>
+ and so admits of an open subcover 
+<img src="compact117.jpg" alt="compact117.jpg" align=absmiddle>
+
+of the same set.  Each rectangle 
+<img src="compact118.jpg" alt="compact118.jpg" align=absmiddle>
+ where
+
+<img src="compact119.jpg" alt="compact119.jpg" align=absmiddle>
+ and 
+<img src="compact120.jpg" alt="compact120.jpg" align=absmiddle>
+ are open
+rectangles. Letting 
+<img src="compact121.jpg" alt="compact121.jpg" align=absmiddle>
+, it follows that 
+<img src="compact122.jpg" alt="compact122.jpg" align=absmiddle>
+
+is actually a finite open cover of 
+<img src="compact123.jpg" alt="compact123.jpg" align=absmiddle>
+.
+<p> For each 
+<img src="compact124.jpg" alt="compact124.jpg" align=absmiddle>
+, we can do the construction of the last paragraph.  The
+set of all the 
+<img src="compact125.jpg" alt="compact125.jpg" align=absmiddle>
+ for all the 
+<img src="compact126.jpg" alt="compact126.jpg" align=absmiddle>
+ is an open cover of 
+<img src="compact127.jpg" alt="compact127.jpg" align=absmiddle>
+ and so it
+admits of a finite subcover 
+<img src="compact128.jpg" alt="compact128.jpg" align=absmiddle>
+.  But then the set of
+all the 
+<img src="compact129.jpg" alt="compact129.jpg" align=absmiddle>
+'s associated with all the 
+<img src="compact130.jpg" alt="compact130.jpg" align=absmiddle>
+'s is a finite subcover of 
+<img src="compact131.jpg" alt="compact131.jpg" align=absmiddle>
+.
+<p><b>Lemma 3:</b> If every rectangle is compact, then every closed and bounded
+subset of 
+<img src="compact132.jpg" alt="compact132.jpg" align=absmiddle>
+ is compact.
+<p><b>Proof:</b> If 
+<img src="compact133.jpg" alt="compact133.jpg" align=absmiddle>
+ is closed and bounded, then it is contained in
+a closed rectangle 
+<img src="compact134.jpg" alt="compact134.jpg" align=absmiddle>
+.  If 
+<img src="compact135.jpg" alt="compact135.jpg" align=absmiddle>
+ is an open cover of 
+<img src="compact136.jpg" alt="compact136.jpg" align=absmiddle>
+, then adding
+the complement of 
+<img src="compact137.jpg" alt="compact137.jpg" align=absmiddle>
+ in 
+<img src="compact138.jpg" alt="compact138.jpg" align=absmiddle>
+ to the cover gives an open cover of 
+<img src="compact139.jpg" alt="compact139.jpg" align=absmiddle>
+.  Since
+
+<img src="compact140.jpg" alt="compact140.jpg" align=absmiddle>
+ is compact, there is a finite subcover.  But then after possibly removing
+the complement of 
+<img src="compact141.jpg" alt="compact141.jpg" align=absmiddle>
+ in 
+<img src="compact142.jpg" alt="compact142.jpg" align=absmiddle>
+, we get a finite subcover of 
+<img src="compact143.jpg" alt="compact143.jpg" align=absmiddle>
+.
+
+<p>The second proof of the Heine-Borel Theorem proceeds by binary search.  We
+will prove it in the case an interval and leave the generalization to a
+rectangle as an exercise.
+<p><b>Proof:</b>(Heine-Borel, case where 
+<img src="compact144.jpg" alt="compact144.jpg" align=absmiddle>
+) Suppose the result is false.  Then there
+is an open cover 
+<img src="compact145.jpg" alt="compact145.jpg" align=absmiddle>
+ of 
+<img src="compact146.jpg" alt="compact146.jpg" align=absmiddle>
+ without a finite subcover.  Let's look for
+smaller intervals with the same property with respect to this fixed cover.
+Clearly, either the left or the right half of 
+<img src="compact147.jpg" alt="compact147.jpg" align=absmiddle>
+ must not have a finite
+subcover (Otherwise, the union of the subcovers for each half would give a
+subcover for the whole interval.)  We can now apply the same reasoning to
+a half that does not have a finite subcover, etc.  This gives a sequence
+of intervals 
+
+<P><CENTER>
+<img src="compact148.jpg" alt="compact148.jpg" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="compact149.jpg" alt="compact149.jpg" align=absmiddle>
+ for every 
+<img src="compact150.jpg" alt="compact150.jpg" align=absmiddle>
+ and such that each
+subinterval does not admit of a finite subcover of 
+<img src="compact151.jpg" alt="compact151.jpg" align=absmiddle>
+.  Clearly,
+one has 
+<img src="compact152.jpg" alt="compact152.jpg" align=absmiddle>
+.  Let 
+<img src="compact153.jpg" alt="compact153.jpg" align=absmiddle>
+ be the least upper bound of
+the set of these 
+<img src="compact154.jpg" alt="compact154.jpg" align=absmiddle>
+.  Then 
+<img src="compact155.jpg" alt="compact155.jpg" align=absmiddle>
+ is in 
+<img src="compact156.jpg" alt="compact156.jpg" align=absmiddle>
+ and so there is a set 
+<img src="compact157.jpg" alt="compact157.jpg" align=absmiddle>
+ in 
+
+<img src="compact158.jpg" alt="compact158.jpg" align=absmiddle>
+ with 
+<img src="compact159.jpg" alt="compact159.jpg" align=absmiddle>
+.  It is now easy to see that 
+<img src="compact160.jpg" alt="compact160.jpg" align=absmiddle>
+ contains
+almost all the intervals 
+<img src="compact161.jpg" alt="compact161.jpg" align=absmiddle>
+, which is a contradiction.
+<p><b>Exercise 6:</b> Generalize the above proof to show that every closed
+rectangle in 
+<img src="compact162.jpg" alt="compact162.jpg" align=absmiddle>
+ is compact.  
+
+<H2>2.3 The Mean Value Theorem</H2>
+<p><b>Definition 9:</b> The derivative of the function
+
+<img src="compact163.jpg" alt="compact163.jpg" align=absmiddle>
+ is
+
+<img src="compact164.jpg" alt="compact164.jpg" align=absmiddle>
+ whenever it exists.
+<p><b>Proposition 3:</b> With 
+<img src="compact165.jpg" alt="compact165.jpg" align=absmiddle>
+ as in the definition, suppose that the
+derivative of 
+<img src="compact166.jpg" alt="compact166.jpg" align=absmiddle>
+ at 
+<img src="compact167.jpg" alt="compact167.jpg" align=absmiddle>
+ exists.  If 
+<img src="compact168.jpg" alt="compact168.jpg" align=absmiddle>
+ is a local maximum or local minimum
+of 
+<img src="compact169.jpg" alt="compact169.jpg" align=absmiddle>
+, then the derivative of 
+<img src="compact170.jpg" alt="compact170.jpg" align=absmiddle>
+ at 
+<img src="compact171.jpg" alt="compact171.jpg" align=absmiddle>
+ is zero.
+<p><b>Proof:</b>Suppose, for example, that 
+<img src="compact172.jpg" alt="compact172.jpg" align=absmiddle>
+ is a local maximum of 
+<img src="compact173.jpg" alt="compact173.jpg" align=absmiddle>
+,
+i.e. 
+<img src="compact174.jpg" alt="compact174.jpg" align=absmiddle>
+ for all 
+<img src="compact175.jpg" alt="compact175.jpg" align=absmiddle>
+ in an open interval containing 
+<img src="compact176.jpg" alt="compact176.jpg" align=absmiddle>
+.  But then
+for 
+<img src="compact177.jpg" alt="compact177.jpg" align=absmiddle>
+ in this interval with 
+<img src="compact178.jpg" alt="compact178.jpg" align=absmiddle>
+, one has 
+<img src="compact179.jpg" alt="compact179.jpg" align=absmiddle>
+
+and so the limit as 
+<img src="compact180.jpg" alt="compact180.jpg" align=absmiddle>
+ approaches 
+<img src="compact181.jpg" alt="compact181.jpg" align=absmiddle>
+ from the right must be non-positive.
+By taking 
+<img src="compact182.jpg" alt="compact182.jpg" align=absmiddle>
+ in the interval with 
+<img src="compact183.jpg" alt="compact183.jpg" align=absmiddle>
+, one has 
+<img src="compact184.jpg" alt="compact184.jpg" align=absmiddle>
+
+and so the limit as 
+<img src="compact185.jpg" alt="compact185.jpg" align=absmiddle>
+ approaches 
+<img src="compact186.jpg" alt="compact186.jpg" align=absmiddle>
+ from the left must be non-negative.  If
+the limit exists, then these two must be equal, and so the derivative is zero.
+The proof in case of a local minimum is analogous.
+<p><b>Proposition 4:</b> (Rolle's Theorem) If 
+<img src="compact187.jpg" alt="compact187.jpg" align=absmiddle>
+
+is continuous on 
+<img src="compact188.jpg" alt="compact188.jpg" align=absmiddle>
+ and differentiable on 
+<img src="compact189.jpg" alt="compact189.jpg" align=absmiddle>
+ and 
+<img src="compact190.jpg" alt="compact190.jpg" align=absmiddle>
+, then
+for some 
+<img src="compact191.jpg" alt="compact191.jpg" align=absmiddle>
+, one has 
+<img src="compact192.jpg" alt="compact192.jpg" align=absmiddle>
+.
+<p><b>Proof:</b> If the result is false, then Proposition 3 says that there
+is no local maximum or local minimum in 
+<img src="compact193.jpg" alt="compact193.jpg" align=absmiddle>
+.  On the other hand, the
+Extreme Value Theorem says that there is at least one absolute maximum and
+at least one absolute minimum; so both must be at the endpoints.  But, then
+the function must be constant in the entire interval.  This is a contradiction.
+<p> We can now prove: 
+<p><b>Corollary 1:</b> (Mean Value Theorem) If 
+<img src="compact194.jpg" alt="compact194.jpg" align=absmiddle>
+ and 
+<img src="compact195.jpg" alt="compact195.jpg" align=absmiddle>
+ are both real valued
+functions continuous on 
+<img src="compact196.jpg" alt="compact196.jpg" align=absmiddle>
+ and differentiable on 
+<img src="compact197.jpg" alt="compact197.jpg" align=absmiddle>
+ and if the
+graphs of 
+<img src="compact198.jpg" alt="compact198.jpg" align=absmiddle>
+ and 
+<img src="compact199.jpg" alt="compact199.jpg" align=absmiddle>
+ intersect at 
+<img src="compact200.jpg" alt="compact200.jpg" align=absmiddle>
+ and 
+<img src="compact201.jpg" alt="compact201.jpg" align=absmiddle>
+, then
+there is at least one 
+<img src="compact202.jpg" alt="compact202.jpg" align=absmiddle>
+ satisfying 
+<img src="compact203.jpg" alt="compact203.jpg" align=absmiddle>
+.
+<p><b>Proof:</b> Apply Rolle's Theorem to the function 
+<img src="compact204.jpg" alt="compact204.jpg" align=absmiddle>
+.
+<p><b>Note:</b> Theorem 1 is the special case where 
+<img src="compact205.jpg" alt="compact205.jpg" align=absmiddle>
+ is the straight
+line from 
+<img src="compact206.jpg" alt="compact206.jpg" align=absmiddle>
+ to 
+<img src="compact207.jpg" alt="compact207.jpg" align=absmiddle>
+.
+<p><b>Corollary 2:</b> (Taylor's Theorem with Remainder)  Let 
+<img src="compact208.jpg" alt="compact208.jpg" align=absmiddle>
+
+and its first n derivatives be continuous on 
+<img src="compact209.jpg" alt="compact209.jpg" align=absmiddle>
+ and 
+<img src="compact210.jpg" alt="compact210.jpg" align=absmiddle>
+.
+Then for all 
+<img src="compact211.jpg" alt="compact211.jpg" align=absmiddle>
+, one has:
+
+<P><CENTER>
+<img src="compact212.jpg" alt="compact212.jpg" align=absmiddle>
+</CENTER><P>
+
+for some 
+<img src="compact213.jpg" alt="compact213.jpg" align=absmiddle>
+.
+<p><b>Proof:</b> Consider the function:
+
+
+<P><CENTER>
+<img src="compact214.jpg" alt="compact214.jpg" align=absmiddle>
+</CENTER><P>
+
+where the constant A is chosen so that 
+<img src="compact215.jpg" alt="compact215.jpg" align=absmiddle>
+.  The derivative can
+be calculated using the product rule:
+
+<P><CENTER>
+<img src="compact216.jpg" alt="compact216.jpg" align=absmiddle>
+</CENTER><P>
+
+Using Rolle's Theorem, we know that there is a 
+<img src="compact217.jpg" alt="compact217.jpg" align=absmiddle>
+ satisfying 
+<img src="compact218.jpg" alt="compact218.jpg" align=absmiddle>
+;
+this is the 
+<img src="compact219.jpg" alt="compact219.jpg" align=absmiddle>
+ we are looking for.
+</BODY>
+</HTML>

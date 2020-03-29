@@ -1,0 +1,1105 @@
+<HTML>
+<HEAD>
+<TITLE>Lecture 8: Manifolds</TITLE>
+</HEAD>
+<body bgcolor=#ffffff>
+<H1 ALIGN=CENTER>Lecture 8: Manifolds</H1>
+<H2>8.1 Definition of Manifolds, fields and forms</H2>
+<P> Throughout this lecture, the word <i>differentiable</i> will be used to
+mean 
+<img src="manifolds1.png" alt="manifolds1.png" align=absmiddle>
+.
+<P><B>Definition 1:</b> A <b>diffeomorphism</b> is a function 
+<img src="manifolds2.png" alt="manifolds2.png" align=absmiddle>
+
+between open sets of 
+<img src="manifolds3.png" alt="manifolds3.png" align=absmiddle>
+ which is differentiable and has a
+differentiable inverse.
+<P><B>Definition 2:</B> The <B>half-space</B> 
+<img src="manifolds4.png" alt="manifolds4.png" align=absmiddle>
+ is the set of points in 
+
+<img src="manifolds5.png" alt="manifolds5.png" align=absmiddle>
+ whose last coordinate is non-negative.  A <B>k-dimensional
+manifold-with-boundary</B> is a subset 
+<img src="manifolds6.png" alt="manifolds6.png" align=absmiddle>
+ of 
+<img src="manifolds7.png" alt="manifolds7.png" align=absmiddle>
+ such that
+every point 
+<img src="manifolds8.png" alt="manifolds8.png" align=absmiddle>
+ satisfies:
+<P> There is a diffeomorphism 
+<img src="manifolds9.png" alt="manifolds9.png" align=absmiddle>
+ from an open neighborhood of
+
+<img src="manifolds10.png" alt="manifolds10.png" align=absmiddle>
+ such that
+
+<P><CENTER>
+<img src="manifolds11.png" alt="manifolds11.png" align=absmiddle>
+</CENTER><P>
+
+where the set 
+<img src="manifolds12.png" alt="manifolds12.png" align=absmiddle>
+ is either 
+<img src="manifolds13.png" alt="manifolds13.png" align=absmiddle>
+ or 
+<img src="manifolds14.png" alt="manifolds14.png" align=absmiddle>
+
+<P> The set of 
+<img src="manifolds15.png" alt="manifolds15.png" align=absmiddle>
+ which satisfy the condition with 
+<img src="manifolds16.png" alt="manifolds16.png" align=absmiddle>
+
+is called the <B>boundary</B> of 
+<img src="manifolds17.png" alt="manifolds17.png" align=absmiddle>
+ and is denoted 
+<img src="manifolds18.png" alt="manifolds18.png" align=absmiddle>
+  
+If the boundary of 
+<img src="manifolds19.png" alt="manifolds19.png" align=absmiddle>
+ is empty, then 
+<img src="manifolds20.png" alt="manifolds20.png" align=absmiddle>
+ can be referred to as a 
+<B>manifold</B>.
+<P> If 
+<img src="manifolds21.png" alt="manifolds21.png" align=absmiddle>
+, then a <B>coordinate system</B>
+around 
+<img src="manifolds22.png" alt="manifolds22.png" align=absmiddle>
+ is a 1-1 differentiable function 
+<img src="manifolds23.png" alt="manifolds23.png" align=absmiddle>
+ for
+which there is an open set 
+<img src="manifolds24.png" alt="manifolds24.png" align=absmiddle>
+ satisfying:
+<OL>
+<LI> 
+<img src="manifolds25.png" alt="manifolds25.png" align=absmiddle>
+
+<LI> 
+<img src="manifolds26.png" alt="manifolds26.png" align=absmiddle>
+ has rank 
+<img src="manifolds27.png" alt="manifolds27.png" align=absmiddle>
+ for each 
+<img src="manifolds28.png" alt="manifolds28.png" align=absmiddle>
+
+<LI> 
+<img src="manifolds29.png" alt="manifolds29.png" align=absmiddle>
+ is continuous.
+</OL>
+<P><B>Proposition 1:</B> A subset 
+<img src="manifolds30.png" alt="manifolds30.png" align=absmiddle>
+ of 
+<img src="manifolds31.png" alt="manifolds31.png" align=absmiddle>
+ is a k-dimensional
+manifold if and only if every 
+<img src="manifolds32.png" alt="manifolds32.png" align=absmiddle>
+ has a coordinate system about 
+<img src="manifolds33.png" alt="manifolds33.png" align=absmiddle>
+
+<P><B>Proof:</B> If 
+<img src="manifolds34.png" alt="manifolds34.png" align=absmiddle>
+ has a function 
+<img src="manifolds35.png" alt="manifolds35.png" align=absmiddle>
+ as in the definition of
+manifold, then let 
+<img src="manifolds36.png" alt="manifolds36.png" align=absmiddle>
+ be the projection on the first 
+<img src="manifolds37.png" alt="manifolds37.png" align=absmiddle>
+ coordinates of
+
+<img src="manifolds38.png" alt="manifolds38.png" align=absmiddle>
+ and 
+<img src="manifolds39.png" alt="manifolds39.png" align=absmiddle>
+ be defined by 
+<img src="manifolds40.png" alt="manifolds40.png" align=absmiddle>
+
+Then 
+<img src="manifolds41.png" alt="manifolds41.png" align=absmiddle>
+ is a coordinate system about 
+<img src="manifolds42.png" alt="manifolds42.png" align=absmiddle>
+.  (The condition involving the
+rank follows by applying the chain rule to 
+<img src="manifolds43.png" alt="manifolds43.png" align=absmiddle>
+ where 
+<img src="manifolds44.png" alt="manifolds44.png" align=absmiddle>
+ is
+with 
+<img src="manifolds45.png" alt="manifolds45.png" align=absmiddle>
+ being the projection on the first
+
+<img src="manifolds46.png" alt="manifolds46.png" align=absmiddle>
+ coordinates.)
+<P> Conversely, if 
+<img src="manifolds47.png" alt="manifolds47.png" align=absmiddle>
+ is a coordinate system about 
+<img src="manifolds48.png" alt="manifolds48.png" align=absmiddle>
+, then define
+
+<img src="manifolds49.png" alt="manifolds49.png" align=absmiddle>
+ by 
+<img src="manifolds50.png" alt="manifolds50.png" align=absmiddle>
+.  If
+
+<img src="manifolds51.png" alt="manifolds51.png" align=absmiddle>
+ is such that 
+<img src="manifolds52.png" alt="manifolds52.png" align=absmiddle>
+, then 
+<img src="manifolds53.png" alt="manifolds53.png" align=absmiddle>
+ is invertible in a neighborhood of
+
+<img src="manifolds54.png" alt="manifolds54.png" align=absmiddle>
+.  The inverse in this neighborhood is the desired function 
+<img src="manifolds55.png" alt="manifolds55.png" align=absmiddle>
+ as in
+the definition of manifold.
+<P><B>Note:</B> If 
+<img src="manifolds56.png" alt="manifolds56.png" align=absmiddle>
+ and 
+<img src="manifolds57.png" alt="manifolds57.png" align=absmiddle>
+ are a coordinate systems about 
+<img src="manifolds58.png" alt="manifolds58.png" align=absmiddle>
+, then 
+
+<img src="manifolds59.png" alt="manifolds59.png" align=absmiddle>
+ is a diffeomorphism as the
+proof showed that 
+<img src="manifolds60.png" alt="manifolds60.png" align=absmiddle>
+ is just the first 
+<img src="manifolds61.png" alt="manifolds61.png" align=absmiddle>
+ coordinates of the
+diffeomorphism 
+<img src="manifolds62.png" alt="manifolds62.png" align=absmiddle>
+
+<P> In particular, 
+<img src="manifolds63.png" alt="manifolds63.png" align=absmiddle>
+ is independent of the
+choice of coordinate system 
+<img src="manifolds64.png" alt="manifolds64.png" align=absmiddle>
+ about 
+<img src="manifolds65.png" alt="manifolds65.png" align=absmiddle>
+  This set is called
+the <B>tangent space</B> of 
+<img src="manifolds66.png" alt="manifolds66.png" align=absmiddle>
+ at 
+<img src="manifolds67.png" alt="manifolds67.png" align=absmiddle>
+  If 
+<img src="manifolds68.png" alt="manifolds68.png" align=absmiddle>
+ is a element of the
+tangent space at 
+<img src="manifolds69.png" alt="manifolds69.png" align=absmiddle>
+ for every 
+<img src="manifolds70.png" alt="manifolds70.png" align=absmiddle>
+ in 
+<img src="manifolds71.png" alt="manifolds71.png" align=absmiddle>
+, then there is a unique
+
+<img src="manifolds72.png" alt="manifolds72.png" align=absmiddle>
+ in the tangent space of 
+<img src="manifolds73.png" alt="manifolds73.png" align=absmiddle>
+ at 
+<img src="manifolds74.png" alt="manifolds74.png" align=absmiddle>
+ such that 
+<img src="manifolds75.png" alt="manifolds75.png" align=absmiddle>
+
+We say 
+<img src="manifolds76.png" alt="manifolds76.png" align=absmiddle>
+ is a <B>differentiable vector field</B> of 
+<img src="manifolds77.png" alt="manifolds77.png" align=absmiddle>
+ if each of the 
+<img src="manifolds78.png" alt="manifolds78.png" align=absmiddle>
+ are
+differentiable vector fields of each 
+<img src="manifolds79.png" alt="manifolds79.png" align=absmiddle>
+.  In particular, if 
+<img src="manifolds80.png" alt="manifolds80.png" align=absmiddle>
+ is the
+restriction of a differentiable vector field on some open subset
+
+<img src="manifolds81.png" alt="manifolds81.png" align=absmiddle>
+ containing 
+<img src="manifolds82.png" alt="manifolds82.png" align=absmiddle>
+,
+then 
+<img src="manifolds83.png" alt="manifolds83.png" align=absmiddle>
+ restricts to a differentiable vector field on 
+<img src="manifolds84.png" alt="manifolds84.png" align=absmiddle>
+
+<P> Similarly, a <B>differentiable k-form</B> on 
+<img src="manifolds85.png" alt="manifolds85.png" align=absmiddle>
+ is a function 
+<img src="manifolds86.png" alt="manifolds86.png" align=absmiddle>
+
+which assigns to each 
+<img src="manifolds87.png" alt="manifolds87.png" align=absmiddle>
+ an 
+<img src="manifolds88.png" alt="manifolds88.png" align=absmiddle>
+ such that
+
+<img src="manifolds89.png" alt="manifolds89.png" align=absmiddle>
+ is a differentiable k-form on 
+<img src="manifolds90.png" alt="manifolds90.png" align=absmiddle>
+ for every coordinate system
+
+<img src="manifolds91.png" alt="manifolds91.png" align=absmiddle>
+ about 
+<img src="manifolds92.png" alt="manifolds92.png" align=absmiddle>
+.  The derivative 
+<img src="manifolds93.png" alt="manifolds93.png" align=absmiddle>
+ of 
+<img src="manifolds94.png" alt="manifolds94.png" align=absmiddle>
+ is the differentiable
+k-form on 
+<img src="manifolds95.png" alt="manifolds95.png" align=absmiddle>
+ provided by the following result:
+<P><B>Proposition 2:</B> If 
+<img src="manifolds96.png" alt="manifolds96.png" align=absmiddle>
+ is a differentiable k-form on 
+<img src="manifolds97.png" alt="manifolds97.png" align=absmiddle>
+, then
+there is a unique differentiable 
+<img src="manifolds98.png" alt="manifolds98.png" align=absmiddle>
+-form on 
+<img src="manifolds99.png" alt="manifolds99.png" align=absmiddle>
+ such that for every
+coordinate system 
+<img src="manifolds100.png" alt="manifolds100.png" align=absmiddle>
+ about 
+<img src="manifolds101.png" alt="manifolds101.png" align=absmiddle>
+, one has
+
+<P><CENTER>
+<img src="manifolds102.png" alt="manifolds102.png" align=absmiddle>
+</CENTER><P>
+
+<P><B>Proof:</B>  For each 
+<img src="manifolds103.png" alt="manifolds103.png" align=absmiddle>
+, let 
+<img src="manifolds104.png" alt="manifolds104.png" align=absmiddle>
+ be chosen
+so that 
+<img src="manifolds105.png" alt="manifolds105.png" align=absmiddle>
+.  Let 
+
+<P><CENTER>
+<img src="manifolds106.png" alt="manifolds106.png" align=absmiddle>
+</CENTER><P>
+
+This definition is independent of the choice of coordinate system 
+<img src="manifolds107.png" alt="manifolds107.png" align=absmiddle>
+ and
+is easily shown to be the desired differentiable 
+<img src="manifolds108.png" alt="manifolds108.png" align=absmiddle>
+-form on 
+<img src="manifolds109.png" alt="manifolds109.png" align=absmiddle>
+
+<H2>8.2 Orientation and Integrals</H2>
+<P> Let 
+<img src="manifolds110.png" alt="manifolds110.png" align=absmiddle>
+ be a finite dimensional real vector space of dimension 
+<img src="manifolds111.png" alt="manifolds111.png" align=absmiddle>
+
+and 
+<img src="manifolds112.png" alt="manifolds112.png" align=absmiddle>
+ be non-zero.  Then 
+<img src="manifolds113.png" alt="manifolds113.png" align=absmiddle>
+
+is non-zero for every basis 
+<img src="manifolds114.png" alt="manifolds114.png" align=absmiddle>
+ of 
+<img src="manifolds115.png" alt="manifolds115.png" align=absmiddle>
+.  Thus, the set of
+(ordered) bases of 
+<img src="manifolds116.png" alt="manifolds116.png" align=absmiddle>
+ is partitioned into two sets, such that two bases are in
+the same set if and only if 
+<img src="manifolds117.png" alt="manifolds117.png" align=absmiddle>
+ applied to the bases gives a real
+number of the same sign.  The set to which an (ordered) basis belongs is
+called its <B>orientation</B> and is denoted 
+<img src="manifolds118.png" alt="manifolds118.png" align=absmiddle>
+  Note that
+two bases being of the same orientation is independent of the choice of
+
+<img src="manifolds119.png" alt="manifolds119.png" align=absmiddle>
+  The <B>usual orientation</B> of 
+<img src="manifolds120.png" alt="manifolds120.png" align=absmiddle>
+ is defined to
+be 
+<img src="manifolds121.png" alt="manifolds121.png" align=absmiddle>
+
+<P> Suppose that for every 
+<img src="manifolds122.png" alt="manifolds122.png" align=absmiddle>
+ (where 
+<img src="manifolds123.png" alt="manifolds123.png" align=absmiddle>
+ is a k-dimensional manifold),
+one has chosen 
+<img src="manifolds124.png" alt="manifolds124.png" align=absmiddle>
+ an orientation of the tangent space 
+<img src="manifolds125.png" alt="manifolds125.png" align=absmiddle>
+.  Then these
+choices are said to be <B>consistent</B> if and only if for every
+coordinate system 
+<img src="manifolds126.png" alt="manifolds126.png" align=absmiddle>
+ about 
+<img src="manifolds127.png" alt="manifolds127.png" align=absmiddle>
+ and every pair 
+<img src="manifolds128.png" alt="manifolds128.png" align=absmiddle>
+,
+one has 
+<img src="manifolds129.png" alt="manifolds129.png" align=absmiddle>
+ if and only if
+
+<img src="manifolds130.png" alt="manifolds130.png" align=absmiddle>
+  Such a consistent
+choice is called an <B>orientation</B> of 
+<img src="manifolds131.png" alt="manifolds131.png" align=absmiddle>
+; a manifold which admits
+an orientation is said to be <B>orientable</B>.
+<P> If the 
+<img src="manifolds132.png" alt="manifolds132.png" align=absmiddle>
+ are consistent, then one says that the coordinate system
+
+<img src="manifolds133.png" alt="manifolds133.png" align=absmiddle>
+ is said to be <B>orientation preserving</B>
+if 
+<img src="manifolds134.png" alt="manifolds134.png" align=absmiddle>
+ for every 
+<img src="manifolds135.png" alt="manifolds135.png" align=absmiddle>
+
+Clearly, if 
+<img src="manifolds136.png" alt="manifolds136.png" align=absmiddle>
+ is a linear transformation
+with 
+<img src="manifolds137.png" alt="manifolds137.png" align=absmiddle>
+, then exactly one of 
+<img src="manifolds138.png" alt="manifolds138.png" align=absmiddle>
+ and 
+<img src="manifolds139.png" alt="manifolds139.png" align=absmiddle>
+ is orientation
+preserving.
+<P> Now, let 
+<img src="manifolds140.png" alt="manifolds140.png" align=absmiddle>
+ be a 
+<img src="manifolds141.png" alt="manifolds141.png" align=absmiddle>
+-dimensional manifold-with-boundary and 
+<img src="manifolds142.png" alt="manifolds142.png" align=absmiddle>
+
+Then 
+<img src="manifolds143.png" alt="manifolds143.png" align=absmiddle>
+ is a 
+<img src="manifolds144.png" alt="manifolds144.png" align=absmiddle>
+-dimensional subspace of 
+<img src="manifolds145.png" alt="manifolds145.png" align=absmiddle>
+.  There are
+precisely two unit vectors perpendicular to this subspace.  Choose a
+coordinate system 
+<img src="manifolds146.png" alt="manifolds146.png" align=absmiddle>
+ about 
+<img src="manifolds147.png" alt="manifolds147.png" align=absmiddle>
+ in which 0 maps to 
+<img src="manifolds148.png" alt="manifolds148.png" align=absmiddle>
+ and 
+<img src="manifolds149.png" alt="manifolds149.png" align=absmiddle>
+
+Then the one of the unit vectors of the form 
+<img src="manifolds150.png" alt="manifolds150.png" align=absmiddle>
+ with 
+<img src="manifolds151.png" alt="manifolds151.png" align=absmiddle>
+ is
+called the <B>outward unit normal</B> 
+<img src="manifolds152.png" alt="manifolds152.png" align=absmiddle>
+  Suppose we have an
+orientation 
+<img src="manifolds153.png" alt="manifolds153.png" align=absmiddle>
+ for 
+<img src="manifolds154.png" alt="manifolds154.png" align=absmiddle>
+.  Then choose 
+<img src="manifolds155.png" alt="manifolds155.png" align=absmiddle>
+ a basis
+for 
+<img src="manifolds156.png" alt="manifolds156.png" align=absmiddle>
+ such that 
+<img src="manifolds157.png" alt="manifolds157.png" align=absmiddle>
+.  Then
+the 
+<img src="manifolds158.png" alt="manifolds158.png" align=absmiddle>
+ define a consistent orientation on 
+<img src="manifolds159.png" alt="manifolds159.png" align=absmiddle>
+
+called the <B>induced orientation</B>.  Note that the orientation induced
+on 
+<img src="manifolds160.png" alt="manifolds160.png" align=absmiddle>
+ from the usual orientation on 
+<img src="manifolds161.png" alt="manifolds161.png" align=absmiddle>
+ is the
+usual orientation if and only if 
+<img src="manifolds162.png" alt="manifolds162.png" align=absmiddle>
+ is even.
+<P> If 
+<img src="manifolds163.png" alt="manifolds163.png" align=absmiddle>
+ is 
+<img src="manifolds164.png" alt="manifolds164.png" align=absmiddle>
+-dimensional manifold contained in 
+<img src="manifolds165.png" alt="manifolds165.png" align=absmiddle>
+ which
+admits an orientation 
+<img src="manifolds166.png" alt="manifolds166.png" align=absmiddle>
+, then one can also define an outward unit normal
+
+<img src="manifolds167.png" alt="manifolds167.png" align=absmiddle>
+ as the one such that if 
+<img src="manifolds168.png" alt="manifolds168.png" align=absmiddle>
+ is a basis of 
+<img src="manifolds169.png" alt="manifolds169.png" align=absmiddle>
+ with
+
+<img src="manifolds170.png" alt="manifolds170.png" align=absmiddle>
+, then 
+<img src="manifolds171.png" alt="manifolds171.png" align=absmiddle>
+ is the
+usual orientation of 
+<img src="manifolds172.png" alt="manifolds172.png" align=absmiddle>
+
+<P> If 
+<img src="manifolds173.png" alt="manifolds173.png" align=absmiddle>
+ is a 
+<img src="manifolds174.png" alt="manifolds174.png" align=absmiddle>
+-form on a 
+<img src="manifolds175.png" alt="manifolds175.png" align=absmiddle>
+-dimensional manifold-with-boundary
+
+<img src="manifolds176.png" alt="manifolds176.png" align=absmiddle>
+ and 
+<img src="manifolds177.png" alt="manifolds177.png" align=absmiddle>
+ is a singular 
+<img src="manifolds178.png" alt="manifolds178.png" align=absmiddle>
+ in 
+<img src="manifolds179.png" alt="manifolds179.png" align=absmiddle>
+, we can define:
+
+<P><CENTER>
+<img src="manifolds180.png" alt="manifolds180.png" align=absmiddle>
+</CENTER><P>
+
+Integrals over 
+<img src="manifolds181.png" alt="manifolds181.png" align=absmiddle>
+-chains are defined in the obvious way.  In the special
+case where 
+<img src="manifolds182.png" alt="manifolds182.png" align=absmiddle>
+, we will always assume that 
+<img src="manifolds183.png" alt="manifolds183.png" align=absmiddle>
+ is the restriction
+to 
+<img src="manifolds184.png" alt="manifolds184.png" align=absmiddle>
+ of a coordinate system 
+<img src="manifolds185.png" alt="manifolds185.png" align=absmiddle>
+ (where
+we assume 
+<img src="manifolds186.png" alt="manifolds186.png" align=absmiddle>
+  If one has an orientation for 
+<img src="manifolds187.png" alt="manifolds187.png" align=absmiddle>
+, we say
+that the singular 
+<img src="manifolds188.png" alt="manifolds188.png" align=absmiddle>
+-cube is orientation preserving provided that 
+<img src="manifolds189.png" alt="manifolds189.png" align=absmiddle>
+ is.
+<P> All the definitions have been set up to guarantee the following result:
+<P><B>Proposition 3:</B> If 
+<img src="manifolds190.png" alt="manifolds190.png" align=absmiddle>
+ are two orientation
+preserving singular 
+<img src="manifolds191.png" alt="manifolds191.png" align=absmiddle>
+-cubes in an oriented 
+<img src="manifolds192.png" alt="manifolds192.png" align=absmiddle>
+-dimensional manifold 
+<img src="manifolds193.png" alt="manifolds193.png" align=absmiddle>
+
+and 
+<img src="manifolds194.png" alt="manifolds194.png" align=absmiddle>
+ is a 
+<img src="manifolds195.png" alt="manifolds195.png" align=absmiddle>
+-form on 
+<img src="manifolds196.png" alt="manifolds196.png" align=absmiddle>
+ such that 
+<img src="manifolds197.png" alt="manifolds197.png" align=absmiddle>
+ outside of
+
+<img src="manifolds198.png" alt="manifolds198.png" align=absmiddle>
+, then
+
+<P><CENTER>
+<img src="manifolds199.png" alt="manifolds199.png" align=absmiddle>
+</CENTER><P>
+
+<P><B>Proof:</B>  We have
+
+<P><CENTER>
+<img src="manifolds200.png" alt="manifolds200.png" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="manifolds201.png" alt="manifolds201.png" align=absmiddle>
+ and we have used the assumption that 
+<img src="manifolds202.png" alt="manifolds202.png" align=absmiddle>
+
+is zero outside of 
+<img src="manifolds203.png" alt="manifolds203.png" align=absmiddle>
+  It remains to show that
+
+<P><CENTER>
+<img src="manifolds204.png" alt="manifolds204.png" align=absmiddle>
+</CENTER><P>
+
+But, if 
+<img src="manifolds205.png" alt="manifolds205.png" align=absmiddle>
+, then we have
+
+<P><CENTER>
+<img src="manifolds206.png" alt="manifolds206.png" align=absmiddle>
+</CENTER><P>
+
+since 
+<img src="manifolds207.png" alt="manifolds207.png" align=absmiddle>
+  The result now follows by
+the change of variables formula for integrals.
+<P>We can now define integrals.  Let 
+<img src="manifolds208.png" alt="manifolds208.png" align=absmiddle>
+ be a k-form on an oriented
+k-dimensional manifold 
+<img src="manifolds209.png" alt="manifolds209.png" align=absmiddle>
+.   Choose an open cover 
+<img src="manifolds210.png" alt="manifolds210.png" align=absmiddle>
+ of 
+<img src="manifolds211.png" alt="manifolds211.png" align=absmiddle>
+
+such that for each 
+<img src="manifolds212.png" alt="manifolds212.png" align=absmiddle>
+, there is an orientation preserving
+singular 
+<img src="manifolds213.png" alt="manifolds213.png" align=absmiddle>
+-cube 
+<img src="manifolds214.png" alt="manifolds214.png" align=absmiddle>
+ with 
+<img src="manifolds215.png" alt="manifolds215.png" align=absmiddle>
+  Let 
+<img src="manifolds216.png" alt="manifolds216.png" align=absmiddle>
+ be
+a partition of unity for 
+<img src="manifolds217.png" alt="manifolds217.png" align=absmiddle>
+ subordinate to this cover.  Define
+
+<P><CENTER>
+<img src="manifolds218.png" alt="manifolds218.png" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="manifolds219.png" alt="manifolds219.png" align=absmiddle>
+ was chosen so that 
+<img src="manifolds220.png" alt="manifolds220.png" align=absmiddle>
+ is zero outside of an compact subset
+of 
+<img src="manifolds221.png" alt="manifolds221.png" align=absmiddle>
+ and 
+<img src="manifolds222.png" alt="manifolds222.png" align=absmiddle>
+ is is an orientation preserving singular 
+<img src="manifolds223.png" alt="manifolds223.png" align=absmiddle>
+-cube
+with 
+<img src="manifolds224.png" alt="manifolds224.png" align=absmiddle>
+  Then just as in Chapter 3, the value of
+this integral is independent of the choice of 
+<img src="manifolds225.png" alt="manifolds225.png" align=absmiddle>
+, 
+<img src="manifolds226.png" alt="manifolds226.png" align=absmiddle>
+, and 
+<img src="manifolds227.png" alt="manifolds227.png" align=absmiddle>
+.
+<P> Now suppose we have a 
+<img src="manifolds228.png" alt="manifolds228.png" align=absmiddle>
+-dimensional manifold-with-boundary 
+<img src="manifolds229.png" alt="manifolds229.png" align=absmiddle>
+ with
+orientation 
+<img src="manifolds230.png" alt="manifolds230.png" align=absmiddle>
+.  Let 
+<img src="manifolds231.png" alt="manifolds231.png" align=absmiddle>
+ be the orientation induced by 
+<img src="manifolds232.png" alt="manifolds232.png" align=absmiddle>
+
+on 
+<img src="manifolds233.png" alt="manifolds233.png" align=absmiddle>
+.  Let 
+<img src="manifolds234.png" alt="manifolds234.png" align=absmiddle>
+ be an orientation-preserving 
+<img src="manifolds235.png" alt="manifolds235.png" align=absmiddle>
+-cube in 
+<img src="manifolds236.png" alt="manifolds236.png" align=absmiddle>
+
+such that 
+<img src="manifolds237.png" alt="manifolds237.png" align=absmiddle>
+ lies in 
+<img src="manifolds238.png" alt="manifolds238.png" align=absmiddle>
+ and this is the only face which
+contains any interior points of 
+<img src="manifolds239.png" alt="manifolds239.png" align=absmiddle>
+.  Then 
+<img src="manifolds240.png" alt="manifolds240.png" align=absmiddle>
+ is orientation
+preserving if and only 
+<img src="manifolds241.png" alt="manifolds241.png" align=absmiddle>
+ is even.  In particular, if 
+<img src="manifolds242.png" alt="manifolds242.png" align=absmiddle>
+ is
+a 
+<img src="manifolds243.png" alt="manifolds243.png" align=absmiddle>
+-form on 
+<img src="manifolds244.png" alt="manifolds244.png" align=absmiddle>
+ which is zero outside of 
+<img src="manifolds245.png" alt="manifolds245.png" align=absmiddle>
+, we have
+
+<P><CENTER>
+<img src="manifolds246.png" alt="manifolds246.png" align=absmiddle>
+</CENTER><P>
+
+Now 
+<img src="manifolds247.png" alt="manifolds247.png" align=absmiddle>
+ appears with coefficient 
+<img src="manifolds248.png" alt="manifolds248.png" align=absmiddle>
+ in the definition of 
+
+<img src="manifolds249.png" alt="manifolds249.png" align=absmiddle>
+.  So,
+
+<P><CENTER>
+<img src="manifolds250.png" alt="manifolds250.png" align=absmiddle>
+</CENTER><P>
+
+This explains the strange choice of signs in the definition of the induced
+orientation on 
+<img src="manifolds251.png" alt="manifolds251.png" align=absmiddle>
+
+<H2>8.3 Stokes' Theorem for Manifolds-with-Boundary</H1>
+<P><B>Theorem 1:</B> (Stokes' Theorem) Let 
+<img src="manifolds252.png" alt="manifolds252.png" align=absmiddle>
+ be a compact oriented 
+<img src="manifolds253.png" alt="manifolds253.png" align=absmiddle>
+-dimensional
+manifold-with-boundary and 
+<img src="manifolds254.png" alt="manifolds254.png" align=absmiddle>
+ be a 
+<img src="manifolds255.png" alt="manifolds255.png" align=absmiddle>
+-form on 
+<img src="manifolds256.png" alt="manifolds256.png" align=absmiddle>
+.  Then
+
+<P><CENTER>
+<img src="manifolds257.png" alt="manifolds257.png" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="manifolds258.png" alt="manifolds258.png" align=absmiddle>
+ is oriented with the orientation induced from that of 
+<img src="manifolds259.png" alt="manifolds259.png" align=absmiddle>
+
+<P><B>Proof:</B> Begin with two special cases:  First assume that there is
+an orientation preserving 
+<img src="manifolds260.png" alt="manifolds260.png" align=absmiddle>
+-cube in 
+<img src="manifolds261.png" alt="manifolds261.png" align=absmiddle>
+ such that 
+<img src="manifolds262.png" alt="manifolds262.png" align=absmiddle>
+
+outside of 
+<img src="manifolds263.png" alt="manifolds263.png" align=absmiddle>
+  Using our earlier Stokes' Theorem, we get
+
+<P><CENTER>
+<img src="manifolds264.png" alt="manifolds264.png" align=absmiddle>
+</CENTER><P>
+
+since 
+<img src="manifolds265.png" alt="manifolds265.png" align=absmiddle>
+ on 
+<img src="manifolds266.png" alt="manifolds266.png" align=absmiddle>
+  But 
+<img src="manifolds267.png" alt="manifolds267.png" align=absmiddle>
+ also
+since 
+<img src="manifolds268.png" alt="manifolds268.png" align=absmiddle>
+ on 
+<img src="manifolds269.png" alt="manifolds269.png" align=absmiddle>
+
+<P> The second case is where there is an orientation-preserving singular
+
+<img src="manifolds270.png" alt="manifolds270.png" align=absmiddle>
+-cube in 
+<img src="manifolds271.png" alt="manifolds271.png" align=absmiddle>
+ such that 
+<img src="manifolds272.png" alt="manifolds272.png" align=absmiddle>
+ is the only face containing points
+of 
+<img src="manifolds273.png" alt="manifolds273.png" align=absmiddle>
+ and 
+<img src="manifolds274.png" alt="manifolds274.png" align=absmiddle>
+ outside of 
+<img src="manifolds275.png" alt="manifolds275.png" align=absmiddle>
+  One has:
+
+<P><CENTER>
+<img src="manifolds276.png" alt="manifolds276.png" align=absmiddle>
+</CENTER><P>
+
+<P>For the general case, choose an open cover 
+<img src="manifolds277.png" alt="manifolds277.png" align=absmiddle>
+ of 
+<img src="manifolds278.png" alt="manifolds278.png" align=absmiddle>
+ and a
+partition of unity 
+<img src="manifolds279.png" alt="manifolds279.png" align=absmiddle>
+ subordinate to 
+<img src="manifolds280.png" alt="manifolds280.png" align=absmiddle>
+ such that for each
+
+<img src="manifolds281.png" alt="manifolds281.png" align=absmiddle>
+, the form 
+<img src="manifolds282.png" alt="manifolds282.png" align=absmiddle>
+ is as in one of the two cases
+already considered.  Since 
+<img src="manifolds283.png" alt="manifolds283.png" align=absmiddle>
+ is compact, one has a finite sum:
+
+<P><CENTER>
+<img src="manifolds284.png" alt="manifolds284.png" align=absmiddle>
+</CENTER><P>
+
+But then,
+
+<P><CENTER>
+<img src="manifolds285.png" alt="manifolds285.png" align=absmiddle>
+</CENTER><P>
+
+<H2>8.4 Volume</H2>
+<P> In 
+<img src="manifolds286.png" alt="manifolds286.png" align=absmiddle>
+, the volume can be calculated as the integral
+of the form 
+<img src="manifolds287.png" alt="manifolds287.png" align=absmiddle>
+.  We would like to find
+a generalization to manifolds of this differential form.  
+<P> If 
+<img src="manifolds288.png" alt="manifolds288.png" align=absmiddle>
+ is a 
+<img src="manifolds289.png" alt="manifolds289.png" align=absmiddle>
+-dimensional manifold, then the usual inner product
+on 
+<img src="manifolds290.png" alt="manifolds290.png" align=absmiddle>
+ induces an inner product on each of the tangent spaces of
+
+<img src="manifolds291.png" alt="manifolds291.png" align=absmiddle>
+.  (Recall that an inner product of V is a bilinear form 
+<img src="manifolds292.png" alt="manifolds292.png" align=absmiddle>
+
+such that 
+<img src="manifolds293.png" alt="manifolds293.png" align=absmiddle>
+ for all 
+<img src="manifolds294.png" alt="manifolds294.png" align=absmiddle>
+.) With an inner product, one
+can define an orthonormal basis to be one of the form 
+<img src="manifolds295.png" alt="manifolds295.png" align=absmiddle>
+
+where 
+<img src="manifolds296.png" alt="manifolds296.png" align=absmiddle>
+ where 
+<img src="manifolds297.png" alt="manifolds297.png" align=absmiddle>
+ is the Kronecker
+
+<img src="manifolds298.png" alt="manifolds298.png" align=absmiddle>
+.  Now, if 
+<img src="manifolds299.png" alt="manifolds299.png" align=absmiddle>
+ and 
+<img src="manifolds300.png" alt="manifolds300.png" align=absmiddle>
+ are both
+orthonormal bases, then we can write 
+<img src="manifolds301.png" alt="manifolds301.png" align=absmiddle>
+.
+In particular, one calculates:
+
+<P><CENTER>
+<img src="manifolds302.png" alt="manifolds302.png" align=absmiddle>
+</CENTER><P>
+
+which can be expressed as a matrix equation 
+<img src="manifolds303.png" alt="manifolds303.png" align=absmiddle>
+ where 
+<img src="manifolds304.png" alt="manifolds304.png" align=absmiddle>
+ is the
+matrix with entries 
+<img src="manifolds305.png" alt="manifolds305.png" align=absmiddle>
+  Taking determinants of this means that
+
+<img src="manifolds306.png" alt="manifolds306.png" align=absmiddle>
+   In particular, if 
+<img src="manifolds307.png" alt="manifolds307.png" align=absmiddle>
+ where 
+<img src="manifolds308.png" alt="manifolds308.png" align=absmiddle>
+
+is a vector space of dimension 
+<img src="manifolds309.png" alt="manifolds309.png" align=absmiddle>
+, then 
+<P><B>Proposition 4:</B>
+<img src="manifolds310.png" alt="manifolds310.png" align=absmiddle>
+ is constant for all
+orthonormal bases of 
+<img src="manifolds311.png" alt="manifolds311.png" align=absmiddle>
+ of the same orientation.
+<P><B>Definition 3:</B> Let 
+<img src="manifolds312.png" alt="manifolds312.png" align=absmiddle>
+ be an oriented 
+<img src="manifolds313.png" alt="manifolds313.png" align=absmiddle>
+-dimensional manifold in 
+<img src="manifolds314.png" alt="manifolds314.png" align=absmiddle>
+.
+Then a 
+<img src="manifolds315.png" alt="manifolds315.png" align=absmiddle>
+-form 
+<img src="manifolds316.png" alt="manifolds316.png" align=absmiddle>
+ on 
+<img src="manifolds317.png" alt="manifolds317.png" align=absmiddle>
+ is called a <B>volume element</B> if
+
+<img src="manifolds318.png" alt="manifolds318.png" align=absmiddle>
+ for all orientation preserving
+orthonormal bases 
+<img src="manifolds319.png" alt="manifolds319.png" align=absmiddle>
+
+<P><B>Example:</B> Consider the case of 2-dimensional oriented manifolds
+in 
+<img src="manifolds320.png" alt="manifolds320.png" align=absmiddle>
+  Let 
+<img src="manifolds321.png" alt="manifolds321.png" align=absmiddle>
+ be the outward normal at 
+<img src="manifolds322.png" alt="manifolds322.png" align=absmiddle>
+.  Then
+define 
+<img src="manifolds323.png" alt="manifolds323.png" align=absmiddle>
+ by
+
+<P><CENTER>
+<img src="manifolds324.png" alt="manifolds324.png" align=absmiddle>
+</CENTER><P>
+
+By the definition of the outward normal, 
+<img src="manifolds325.png" alt="manifolds325.png" align=absmiddle>
+ is a volume element.
+Further, if 
+<img src="manifolds326.png" alt="manifolds326.png" align=absmiddle>
+ is an orthonormal basis of the same orientation as 
+<img src="manifolds327.png" alt="manifolds327.png" align=absmiddle>
+,
+one has:
+
+<P><CENTER>
+<img src="manifolds328.png" alt="manifolds328.png" align=absmiddle>
+</CENTER><P>
+
+Also, expanding as cofactors of the last row, one gets
+
+<P><CENTER>
+<img src="manifolds329.png" alt="manifolds329.png" align=absmiddle>
+</CENTER><P>
+
+<P> On 
+<img src="manifolds330.png" alt="manifolds330.png" align=absmiddle>
+, one can compute for 
+<img src="manifolds331.png" alt="manifolds331.png" align=absmiddle>
+ using
+
+<img src="manifolds332.png" alt="manifolds332.png" align=absmiddle>
+ for some 
+<img src="manifolds333.png" alt="manifolds333.png" align=absmiddle>
+, that
+
+<P><CENTER>
+<img src="manifolds334.png" alt="manifolds334.png" align=absmiddle>
+</CENTER><P>
+
+Letting 
+<img src="manifolds335.png" alt="manifolds335.png" align=absmiddle>
+, and 
+<img src="manifolds336.png" alt="manifolds336.png" align=absmiddle>
+, we get:
+<P><B>Proposition 4:</B> Let 
+<img src="manifolds337.png" alt="manifolds337.png" align=absmiddle>
+ be an oriented 2-dimensional manifold in 
+
+<img src="manifolds338.png" alt="manifolds338.png" align=absmiddle>
+ and let 
+<img src="manifolds339.png" alt="manifolds339.png" align=absmiddle>
+ be the unit outward normal.  Then
+the volume element 
+<img src="manifolds340.png" alt="manifolds340.png" align=absmiddle>
+ satisfies:
+
+<P><CENTER>
+<img src="manifolds341.png" alt="manifolds341.png" align=absmiddle>
+</CENTER><P>
+
+Further, on 
+<img src="manifolds342.png" alt="manifolds342.png" align=absmiddle>
+, one has:
+
+<P><CENTER>
+<img src="manifolds343.png" alt="manifolds343.png" align=absmiddle>
+</CENTER><P>
+
+<P>To calculate a surface area, we need to evaluate 
+<img src="manifolds344.png" alt="manifolds344.png" align=absmiddle>
+
+for an orientation preserving singular 2-cube 
+<img src="manifolds345.png" alt="manifolds345.png" align=absmiddle>
+.  The integrand is
+
+<P><CENTER>
+<img src="manifolds346.png" alt="manifolds346.png" align=absmiddle>
+</CENTER><P>
+
+where
+
+<P><CENTER>
+<img src="manifolds347.png" alt="manifolds347.png" align=absmiddle>
+</CENTER><P>
+
+(See Problem 4.9, part e.)
+<H2> 8.4 Classical Stokes' Theorem</H2>
+<P> Three separate results will be shown to be special cases of our
+Stokes' Theorem.
+<P><B>Theorem 2:</B> (Green's Theorem) Let 
+<img src="manifolds348.png" alt="manifolds348.png" align=absmiddle>
+ be a
+compact 2-dimensional manifold-with-boundary.  Suppose that 
+<img src="manifolds349.png" alt="manifolds349.png" align=absmiddle>
+
+are differentiable.  Then
+
+<P><CENTER>
+<img src="manifolds350.png" alt="manifolds350.png" align=absmiddle>
+</CENTER><P>
+
+<P><B>Proof:</B> This is just Stoke's Theorem in the case of a 1-form.
+<P><B>Theorem 3:</B> (Divergence Theorem) Let 
+<img src="manifolds351.png" alt="manifolds351.png" align=absmiddle>
+ be
+a compact 3-dimensional manifold-with-boundary and 
+<img src="manifolds352.png" alt="manifolds352.png" align=absmiddle>
+ be the unit outward
+normal on 
+<img src="manifolds353.png" alt="manifolds353.png" align=absmiddle>
+.  Let 
+<img src="manifolds354.png" alt="manifolds354.png" align=absmiddle>
+ be a differentiable vector field on 
+<img src="manifolds355.png" alt="manifolds355.png" align=absmiddle>
+
+Then 
+
+<P><CENTER>
+<img src="manifolds356.png" alt="manifolds356.png" align=absmiddle>
+</CENTER><P>
+
+In terms of 
+<img src="manifolds357.png" alt="manifolds357.png" align=absmiddle>
+, this amounts to:
+
+<P><CENTER>
+<img src="manifolds358.png" alt="manifolds358.png" align=absmiddle>
+</CENTER><P>
+
+<P><B>Proof:</B> Define 
+<img src="manifolds359.png" alt="manifolds359.png" align=absmiddle>
+
+Then 
+<img src="manifolds360.png" alt="manifolds360.png" align=absmiddle>
+  Further, Proposition 4 says that:
+
+<P><CENTER>
+<img src="manifolds361.png" alt="manifolds361.png" align=absmiddle>
+</CENTER><P>
+
+So, we see that this is also a special case of Stokes' Theorem
+<P><B>Theorem 4:</B> (Stokes' Theorem) Let 
+<img src="manifolds362.png" alt="manifolds362.png" align=absmiddle>
+ be a
+compact oriented 2-dimensional manifold-with-boundary and 
+<img src="manifolds363.png" alt="manifolds363.png" align=absmiddle>
+ be the unit
+outward normal on 
+<img src="manifolds364.png" alt="manifolds364.png" align=absmiddle>
+ determined by the orientation on 
+<img src="manifolds365.png" alt="manifolds365.png" align=absmiddle>
+.  Let 
+<img src="manifolds366.png" alt="manifolds366.png" align=absmiddle>
+
+have the induced orientation.  Let 
+<img src="manifolds367.png" alt="manifolds367.png" align=absmiddle>
+ be the vector field on 
+<img src="manifolds368.png" alt="manifolds368.png" align=absmiddle>
+
+with 
+<img src="manifolds369.png" alt="manifolds369.png" align=absmiddle>
+ and 
+<img src="manifolds370.png" alt="manifolds370.png" align=absmiddle>
+ be a differentiable vector field in an open set
+containing 
+<img src="manifolds371.png" alt="manifolds371.png" align=absmiddle>
+.  Then
+
+<P><CENTER>
+<img src="manifolds372.png" alt="manifolds372.png" align=absmiddle>
+</CENTER><P>
+
+In terms of 
+<img src="manifolds373.png" alt="manifolds373.png" align=absmiddle>
+, this amounts to:
+
+<P><CENTER>
+<img src="manifolds374.png" alt="manifolds374.png" align=absmiddle>
+</CENTER><P>
+
+<P><B>Proof:</B> Let 
+<img src="manifolds375.png" alt="manifolds375.png" align=absmiddle>
+ on 
+<img src="manifolds376.png" alt="manifolds376.png" align=absmiddle>
+ be defined by 
+<img src="manifolds377.png" alt="manifolds377.png" align=absmiddle>
+
+Again, using Proposition 4, we get:
+
+<P><CENTER>
+<img src="manifolds378.png" alt="manifolds378.png" align=absmiddle>
+</CENTER><P>
+
+<P>  Since 
+<img src="manifolds379.png" alt="manifolds379.png" align=absmiddle>
+, one has
+
+<P><CENTER>
+<img src="manifolds380.png" alt="manifolds380.png" align=absmiddle>
+</CENTER><P>
+
+as one can see by evaluating each equation at 
+<img src="manifolds381.png" alt="manifolds381.png" align=absmiddle>
+.
+It follows that
+
+<P><CENTER>
+<img src="manifolds382.png" alt="manifolds382.png" align=absmiddle>
+</CENTER><P>
+
+So, this is also a special case of our earlier Stokes' Theorem.
+</BODY>
+</HTML>

@@ -1,0 +1,571 @@
+<HTML>
+<HEAD>
+<TITLE>Derivatives</TITLE>
+</HEAD>
+<body bgcolor=#ffffff>
+<CENTER>
+<H1>Lecture 3: Change and Derivatives</H1>
+</CENTER>
+<H2> 3.1 Derivatives and the Chain Rule</H2>
+<p>Given a function 
+<img src="deriv1.png" alt="deriv1.png" align=absmiddle>
+, the change from 
+<img src="deriv2.png" alt="deriv2.png" align=absmiddle>
+ to 
+<img src="deriv3.png" alt="deriv3.png" align=absmiddle>
+ is 
+<img src="deriv4.png" alt="deriv4.png" align=absmiddle>
+.
+For example, if 
+<img src="deriv5.png" alt="deriv5.png" align=absmiddle>
+, then the change in going from 
+<img src="deriv6.png" alt="deriv6.png" align=absmiddle>
+
+to 
+<img src="deriv7.png" alt="deriv7.png" align=absmiddle>
+ is
+
+<P><CENTER>
+<img src="deriv8.png" alt="deriv8.png" align=absmiddle>
+</CENTER><P>
+
+This can be seen as a linear function 
+<img src="deriv9.png" alt="deriv9.png" align=absmiddle>
+ plus another
+part 
+<img src="deriv10.png" alt="deriv10.png" align=absmiddle>
+ which is small in the sense that
+
+<P><CENTER>
+<img src="deriv11.png" alt="deriv11.png" align=absmiddle>
+</CENTER><P>
+
+
+<p><b>Definition 1:</b> If 
+<img src="deriv12.png" alt="deriv12.png" align=absmiddle>
+ is a
+function, then a derivative 
+<img src="deriv13.png" alt="deriv13.png" align=absmiddle>
+ of 
+<img src="deriv14.png" alt="deriv14.png" align=absmiddle>
+ at 
+<img src="deriv15.png" alt="deriv15.png" align=absmiddle>
+ is a
+linear function from 
+<img src="deriv16.png" alt="deriv16.png" align=absmiddle>
+ to 
+<img src="deriv17.png" alt="deriv17.png" align=absmiddle>
+  such that
+
+<P><CENTER>
+<img src="deriv18.png" alt="deriv18.png" align=absmiddle>
+</CENTER><P>
+
+
+<p><b>Proposition 1:</b> There is at most one derivative of 
+<img src="deriv19.png" alt="deriv19.png" align=absmiddle>
+ at 
+<img src="deriv20.png" alt="deriv20.png" align=absmiddle>
+.
+<p><b>Proof:</b> Suppose that 
+<img src="deriv21.png" alt="deriv21.png" align=absmiddle>
+ and 
+<img src="deriv22.png" alt="deriv22.png" align=absmiddle>
+ are two derivatives.
+Then each satisfies the limit condition of the definition.  Subtracting
+these gives:
+
+<P><CENTER>
+<img src="deriv23.png" alt="deriv23.png" align=absmiddle>
+</CENTER><P>
+
+For 
+<img src="deriv24.png" alt="deriv24.png" align=absmiddle>
+, let 
+<img src="deriv25.png" alt="deriv25.png" align=absmiddle>
+ for 
+<img src="deriv26.png" alt="deriv26.png" align=absmiddle>
+.  Then
+
+<P><CENTER>
+<img src="deriv27.png" alt="deriv27.png" align=absmiddle>
+</CENTER><P>
+
+since 
+<img src="deriv28.png" alt="deriv28.png" align=absmiddle>
+ and 
+<img src="deriv29.png" alt="deriv29.png" align=absmiddle>
+ are linear. So 
+<img src="deriv30.png" alt="deriv30.png" align=absmiddle>
+
+
+<p><b>Exercise 1:</b> If 
+<img src="deriv31.png" alt="deriv31.png" align=absmiddle>
+ is
+linear, then 
+<img src="deriv32.png" alt="deriv32.png" align=absmiddle>
+ for all 
+<img src="deriv33.png" alt="deriv33.png" align=absmiddle>
+.  If 
+<img src="deriv34.png" alt="deriv34.png" align=absmiddle>
+ is a constant
+function, then 
+<img src="deriv35.png" alt="deriv35.png" align=absmiddle>
+ for all 
+<img src="deriv36.png" alt="deriv36.png" align=absmiddle>
+.
+
+<p><b>Proposition 2:</b> If 
+<img src="deriv37.png" alt="deriv37.png" align=absmiddle>
+ and
+
+<img src="deriv38.png" alt="deriv38.png" align=absmiddle>
+, then 
+<img src="deriv39.png" alt="deriv39.png" align=absmiddle>
+ is differentiable at 
+<img src="deriv40.png" alt="deriv40.png" align=absmiddle>
+ if and only if
+the coordinate functions 
+<img src="deriv41.png" alt="deriv41.png" align=absmiddle>
+ are
+differentiable for all 
+<img src="deriv42.png" alt="deriv42.png" align=absmiddle>
+.  If either is true, then
+
+<img src="deriv43.png" alt="deriv43.png" align=absmiddle>
+.
+<p><b>Proof:</b> If 
+<img src="deriv44.png" alt="deriv44.png" align=absmiddle>
+ is differentiable at 
+<img src="deriv45.png" alt="deriv45.png" align=absmiddle>
+, then
+
+<P><CENTER>
+<img src="deriv46.png" alt="deriv46.png" align=absmiddle>
+</CENTER><P>
+
+In particular each of the terms of the sum have limit zero.  So the
+coordinate functions 
+<img src="deriv47.png" alt="deriv47.png" align=absmiddle>
+ have derivatives and they are the coordinate functions of the 
+derivative of 
+<img src="deriv48.png" alt="deriv48.png" align=absmiddle>
+.  Conversely, if the coordinate functions 
+<img src="deriv49.png" alt="deriv49.png" align=absmiddle>
+ are
+differentiable, then putting their derivatives in the above formula in the
+place of the coordinate functions of 
+<img src="deriv50.png" alt="deriv50.png" align=absmiddle>
+ shows that 
+<img src="deriv51.png" alt="deriv51.png" align=absmiddle>
+ is differentiable
+at 
+<img src="deriv52.png" alt="deriv52.png" align=absmiddle>
+.
+<p>The main computational tool for derivatives is:
+<p><b>Theorem 1:</b> (Chain Rule) If 
+<img src="deriv53.png" alt="deriv53.png" align=absmiddle>
+
+is differentiable at 
+<img src="deriv54.png" alt="deriv54.png" align=absmiddle>
+ and if 
+<img src="deriv55.png" alt="deriv55.png" align=absmiddle>
+
+is differentiable at 
+<img src="deriv56.png" alt="deriv56.png" align=absmiddle>
+, then 
+<img src="deriv57.png" alt="deriv57.png" align=absmiddle>
+
+is differentiable at 
+<img src="deriv58.png" alt="deriv58.png" align=absmiddle>
+ and 
+<img src="deriv59.png" alt="deriv59.png" align=absmiddle>
+.
+<p><b>Proof:</b> Define 
+<img src="deriv60.png" alt="deriv60.png" align=absmiddle>
+ and 
+<img src="deriv61.png" alt="deriv61.png" align=absmiddle>
+ by
+
+<P><CENTER>
+<img src="deriv62.png" alt="deriv62.png" align=absmiddle>
+</CENTER><P>
+
+and
+
+<P><CENTER>
+<img src="deriv63.png" alt="deriv63.png" align=absmiddle>
+</CENTER><P>
+
+We need to show that 
+<img src="deriv64.png" alt="deriv64.png" align=absmiddle>
+ where
+
+<P><CENTER>
+<img src="deriv65.png" alt="deriv65.png" align=absmiddle>
+</CENTER><P>
+
+Now, letting 
+<img src="deriv66.png" alt="deriv66.png" align=absmiddle>
+ and 
+<img src="deriv67.png" alt="deriv67.png" align=absmiddle>
+, we have by the definition of 
+<img src="deriv68.png" alt="deriv68.png" align=absmiddle>
+,
+
+<P><CENTER>
+<img src="deriv69.png" alt="deriv69.png" align=absmiddle>
+</CENTER><P>
+
+Using the definition of 
+<img src="deriv70.png" alt="deriv70.png" align=absmiddle>
+, we get
+
+<P><CENTER>
+<img src="deriv71.png" alt="deriv71.png" align=absmiddle>
+</CENTER><P>
+
+By linearity of 
+<img src="deriv72.png" alt="deriv72.png" align=absmiddle>
+, this simplifies to:
+
+<P><CENTER>
+<img src="deriv73.png" alt="deriv73.png" align=absmiddle>
+</CENTER><P>
+
+<p>We must show that 
+<img src="deriv74.png" alt="deriv74.png" align=absmiddle>
+.  Since 
+<img src="deriv75.png" alt="deriv75.png" align=absmiddle>
+ is
+linear, there is an 
+<img src="deriv76.png" alt="deriv76.png" align=absmiddle>
+ such that
+
+<P><CENTER>
+<img src="deriv77.png" alt="deriv77.png" align=absmiddle>
+</CENTER><P>
+
+and the right hand side approaches zero. 
+<p>For the other term, for any 
+<img src="deriv78.png" alt="deriv78.png" align=absmiddle>
+,
+there is a 
+<img src="deriv79.png" alt="deriv79.png" align=absmiddle>
+ such that 
+
+<P><CENTER>
+<img src="deriv80.png" alt="deriv80.png" align=absmiddle>
+</CENTER><P>
+
+whenever 
+<img src="deriv81.png" alt="deriv81.png" align=absmiddle>
+.  Note that we can remove the
+condition that the middle term be non-zero -- if it were zero, then
+the condition becomes 
+<img src="deriv82.png" alt="deriv82.png" align=absmiddle>
+ which is true since
+
+<img src="deriv83.png" alt="deriv83.png" align=absmiddle>
+.  Now 
+<img src="deriv84.png" alt="deriv84.png" align=absmiddle>
+ is bounded for small 
+<img src="deriv85.png" alt="deriv85.png" align=absmiddle>
+.
+So 
+<P><CENTER>
+<img src="deriv86.png" alt="deriv86.png" align=absmiddle>
+</CENTER><P>
+
+This completes the proof.
+<p><b>Corollary 1:</b> If 
+<img src="deriv87.png" alt="deriv87.png" align=absmiddle>
+ are
+differentiable at 
+<img src="deriv88.png" alt="deriv88.png" align=absmiddle>
+, then
+<ol>
+<li> 
+<img src="deriv89.png" alt="deriv89.png" align=absmiddle>
+
+<li> 
+<img src="deriv90.png" alt="deriv90.png" align=absmiddle>
+
+</ol>
+<p><b>Proof:</b> The sum 
+<img src="deriv91.png" alt="deriv91.png" align=absmiddle>
+ (respectively the product 
+<img src="deriv92.png" alt="deriv92.png" align=absmiddle>
+) function can be
+written as the composition of the 
+<img src="deriv93.png" alt="deriv93.png" align=absmiddle>
+
+defined by 
+<img src="deriv94.png" alt="deriv94.png" align=absmiddle>
+ and the function 
+<img src="deriv95.png" alt="deriv95.png" align=absmiddle>
+
+(respectively 
+<img src="deriv96.png" alt="deriv96.png" align=absmiddle>
+) defined by
+
+<img src="deriv97.png" alt="deriv97.png" align=absmiddle>
+ (respectively 
+<img src="deriv98.png" alt="deriv98.png" align=absmiddle>
+).  Now 
+<img src="deriv99.png" alt="deriv99.png" align=absmiddle>
+ is linear and
+so its derivative is itself.  Further, it is easy to check that:
+
+<P><CENTER>
+<img src="deriv100.png" alt="deriv100.png" align=absmiddle>
+</CENTER><P>
+
+and so 
+<img src="deriv101.png" alt="deriv101.png" align=absmiddle>
+ since
+
+<P><CENTER>
+<img src="deriv102.png" alt="deriv102.png" align=absmiddle>
+</CENTER><P>
+
+The formulas now follow by the chain rule.
+
+<H2> 3.2 Partial Derivatives</H2>
+
+<p><b>Definition 2:</b> Let 
+<img src="deriv103.png" alt="deriv103.png" align=absmiddle>
+ be a function and 
+<img src="deriv104.png" alt="deriv104.png" align=absmiddle>
+.
+Then, for each j, one can define 
+<img src="deriv105.png" alt="deriv105.png" align=absmiddle>
+ by
+
+<img src="deriv106.png" alt="deriv106.png" align=absmiddle>
+.  The 
+<img src="deriv107.png" alt="deriv107.png" align=absmiddle>
+ partial
+derivative 
+<img src="deriv108.png" alt="deriv108.png" align=absmiddle>
+ of 
+<img src="deriv109.png" alt="deriv109.png" align=absmiddle>
+ at 
+<img src="deriv110.png" alt="deriv110.png" align=absmiddle>
+ is defined to be 
+<img src="deriv111.png" alt="deriv111.png" align=absmiddle>
+.
+
+<p><b>Proposition 3:</b> Let 
+<img src="deriv112.png" alt="deriv112.png" align=absmiddle>
+ be a function with domain
+
+<img src="deriv113.png" alt="deriv113.png" align=absmiddle>
+ and 
+<img src="deriv114.png" alt="deriv114.png" align=absmiddle>
+ be in the interior of 
+<img src="deriv115.png" alt="deriv115.png" align=absmiddle>
+ and  assume that
+
+<img src="deriv116.png" alt="deriv116.png" align=absmiddle>
+ is either a local minimum or local maximum of 
+<img src="deriv117.png" alt="deriv117.png" align=absmiddle>
+.  Then 
+<img src="deriv118.png" alt="deriv118.png" align=absmiddle>
+
+provided that the partial derivative exists.  
+<p><b>Proof:</b> 
+<img src="deriv119.png" alt="deriv119.png" align=absmiddle>
+ is a local extremum of the function of one variable 
+<img src="deriv120.png" alt="deriv120.png" align=absmiddle>
+.
+<p><b>Theorem 2:</b> Let 
+<img src="deriv121.png" alt="deriv121.png" align=absmiddle>
+ be a function and
+
+<img src="deriv122.png" alt="deriv122.png" align=absmiddle>
+.  If 
+<img src="deriv123.png" alt="deriv123.png" align=absmiddle>
+ is differentiable at 
+<img src="deriv124.png" alt="deriv124.png" align=absmiddle>
+, then 
+<img src="deriv125.png" alt="deriv125.png" align=absmiddle>
+ is the
+linear transformation whose matrix is the 
+<img src="deriv126.png" alt="deriv126.png" align=absmiddle>
+ array of 
+partial derivatives 
+<img src="deriv127.png" alt="deriv127.png" align=absmiddle>
+ of the coordinate functions 
+<img src="deriv128.png" alt="deriv128.png" align=absmiddle>
+ of 
+<img src="deriv129.png" alt="deriv129.png" align=absmiddle>
+.
+Conversely, if The partial derivatives of the coordinate functions of 
+<img src="deriv130.png" alt="deriv130.png" align=absmiddle>
+
+all have partials defined in an open neighborhood of 
+<img src="deriv131.png" alt="deriv131.png" align=absmiddle>
+ and are continuous
+at 
+<img src="deriv132.png" alt="deriv132.png" align=absmiddle>
+, then 
+<img src="deriv133.png" alt="deriv133.png" align=absmiddle>
+ is differentiable at 
+<img src="deriv134.png" alt="deriv134.png" align=absmiddle>
+. 
+<p><b>Proof:</b> By Proposition 2, it is enough to check the case where 
+<img src="deriv135.png" alt="deriv135.png" align=absmiddle>
+.
+The first assertion is immediate from the definitions.  For the
+second assertion break up the change in 
+<img src="deriv136.png" alt="deriv136.png" align=absmiddle>
+ into a sum of changes in which
+one varies only one parameter at a time:
+
+<P><CENTER>
+<img src="deriv137.png" alt="deriv137.png" align=absmiddle>
+</CENTER><P>
+
+One can apply the Mean Value Theorem to each of the differences on the right:
+
+<P><CENTER>
+<img src="deriv138.png" alt="deriv138.png" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="deriv139.png" alt="deriv139.png" align=absmiddle>
+.
+It follows that
+
+<P><CENTER>
+<img src="deriv140.png" alt="deriv140.png" align=absmiddle>
+</CENTER><P>
+
+because the 
+<img src="deriv141.png" alt="deriv141.png" align=absmiddle>
+ are continuous at 
+<img src="deriv142.png" alt="deriv142.png" align=absmiddle>
+.
+<p><b>Corollary 2:</b> (Chain Rule) If 
+<img src="deriv143.png" alt="deriv143.png" align=absmiddle>
+ for 
+<img src="deriv144.png" alt="deriv144.png" align=absmiddle>
+ are
+continuously differentiable at 
+<img src="deriv145.png" alt="deriv145.png" align=absmiddle>
+ and if 
+<img src="deriv146.png" alt="deriv146.png" align=absmiddle>
+ is
+differentiable at (g_1(a),...,g_m(a)), then 
+<img src="deriv147.png" alt="deriv147.png" align=absmiddle>
+ has
+partial derivatives
+
+<P><CENTER>
+<img src="deriv148.png" alt="deriv148.png" align=absmiddle>
+</CENTER><P>
+
+<p><b>Proof:</b> Apply the Chain Rule and Theorem 2.
+
+<p><b>Theorem 3:</b> If 
+<img src="deriv149.png" alt="deriv149.png" align=absmiddle>
+ is a function defined on
+an open subset 
+<img src="deriv150.png" alt="deriv150.png" align=absmiddle>
+ and if 
+<img src="deriv151.png" alt="deriv151.png" align=absmiddle>
+ and its first and
+second order partials are exist throughout 
+<img src="deriv152.png" alt="deriv152.png" align=absmiddle>
+ and are continuous there,
+then 
+<img src="deriv153.png" alt="deriv153.png" align=absmiddle>
+ for all 
+<img src="deriv154.png" alt="deriv154.png" align=absmiddle>
+.
+<p><b>Proof:</b> It is clearly enough to prove the result in the case where
+
+<img src="deriv155.png" alt="deriv155.png" align=absmiddle>
+.  Let 
+<img src="deriv156.png" alt="deriv156.png" align=absmiddle>
+ and 
+<img src="deriv157.png" alt="deriv157.png" align=absmiddle>
+ be such that the rectangle
+with diagonal from 
+<img src="deriv158.png" alt="deriv158.png" align=absmiddle>
+ to 
+<img src="deriv159.png" alt="deriv159.png" align=absmiddle>
+ is contained in 
+<img src="deriv160.png" alt="deriv160.png" align=absmiddle>
+.  
+Let 
+<img src="deriv161.png" alt="deriv161.png" align=absmiddle>
+ be defined by 
+<img src="deriv162.png" alt="deriv162.png" align=absmiddle>
+.   First apply the
+Mean Value Theorem to find a 
+<img src="deriv163.png" alt="deriv163.png" align=absmiddle>
+ such that 
+
+<P><CENTER>
+<img src="deriv164.png" alt="deriv164.png" align=absmiddle>
+</CENTER><P>
+
+Now, 
+<img src="deriv165.png" alt="deriv165.png" align=absmiddle>
+.  Apply the Mean Value Theorem again
+to find 
+<img src="deriv166.png" alt="deriv166.png" align=absmiddle>
+ between 
+<img src="deriv167.png" alt="deriv167.png" align=absmiddle>
+ and 
+<img src="deriv168.png" alt="deriv168.png" align=absmiddle>
+ such that 
+
+<P><CENTER>
+<img src="deriv169.png" alt="deriv169.png" align=absmiddle>
+</CENTER><P>
+
+Combining results we have
+
+<P><CENTER>
+<img src="deriv170.png" alt="deriv170.png" align=absmiddle>
+</CENTER><P>
+
+<p>But
+
+<P><CENTER>
+<img src="deriv171.png" alt="deriv171.png" align=absmiddle>
+</CENTER><P>
+
+which is symmetric in the two variables.  So, one can obtain another
+expression for the same by repeating the same construction swapping the
+roles of the two variables:  Let 
+<img src="deriv172.png" alt="deriv172.png" align=absmiddle>
+ and get 
+<img src="deriv173.png" alt="deriv173.png" align=absmiddle>
+
+and 
+<img src="deriv174.png" alt="deriv174.png" align=absmiddle>
+ such that 
+
+<P><CENTER>
+<img src="deriv175.png" alt="deriv175.png" align=absmiddle>
+</CENTER><P>
+
+and
+
+<P><CENTER>
+<img src="deriv176.png" alt="deriv176.png" align=absmiddle>
+</CENTER><P>
+
+So 
+<img src="deriv177.png" alt="deriv177.png" align=absmiddle>
+.  Now take the limit as
+
+<img src="deriv178.png" alt="deriv178.png" align=absmiddle>
+ and use the continuity of the second partials to conclude
+that the mixed partials are equal.
+</BODY>
+</HTML>

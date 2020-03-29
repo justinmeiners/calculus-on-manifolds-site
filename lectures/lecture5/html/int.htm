@@ -1,0 +1,1203 @@
+<HTML>
+<HEAD>
+<TITLE>Integrals</TITLE>
+</HEAD>
+<body bgcolor=#ffffff>
+<H1 ALIGN=CENTER>Integrals</H1>
+
+<p> In order to simplify the presentation, we will develop integration using 
+the Riemann (or Jordan) approach rather than the more general theory of
+Lebesgue integration.
+
+<H2>Integration Over a Rectangle</H2>
+<p><b>Definition 1:</b> (i) A <b>partition of an interval</b> 
+<img src="int1.png" alt="int1.png" align=absmiddle>
+
+is a sequence 
+<img src="int2.png" alt="int2.png" align=absmiddle>
+ where 
+<img src="int3.png" alt="int3.png" align=absmiddle>
+.
+A <b>partition of a rectangle</b> 
+<img src="int4.png" alt="int4.png" align=absmiddle>
+
+is an n-tuple 
+<img src="int5.png" alt="int5.png" align=absmiddle>
+ where 
+<img src="int6.png" alt="int6.png" align=absmiddle>
+ is a partition of 
+<img src="int7.png" alt="int7.png" align=absmiddle>
+
+for every 
+<img src="int8.png" alt="int8.png" align=absmiddle>
+.  A second partition 
+<img src="int9.png" alt="int9.png" align=absmiddle>
+ of the same rectangle is
+called a <b>refinement</b> of the first partition 
+<img src="int10.png" alt="int10.png" align=absmiddle>
+ if the set 
+<img src="int11.png" alt="int11.png" align=absmiddle>
+ is a subset
+of the set 
+<img src="int12.png" alt="int12.png" align=absmiddle>
+ for each 
+<img src="int13.png" alt="int13.png" align=absmiddle>
+.
+<p> (ii) If 
+<img src="int14.png" alt="int14.png" align=absmiddle>
+ for each 
+<img src="int15.png" alt="int15.png" align=absmiddle>
+, then the partition P defines
+the set of <b>subrectangles of the partition</b> 
+<img src="int16.png" alt="int16.png" align=absmiddle>
+ made up of all the
+rectangles of the form 
+<img src="int17.png" alt="int17.png" align=absmiddle>
+.
+The <b>volume</b> 
+<img src="int18.png" alt="int18.png" align=absmiddle>
+ of the rectangle 
+<img src="int19.png" alt="int19.png" align=absmiddle>
+ is defined to be
+
+<P><CENTER>
+<img src="int20.png" alt="int20.png" align=absmiddle>
+</CENTER><P>
+
+<p> (iii) If, in addition, 
+<img src="int21.png" alt="int21.png" align=absmiddle>
+ is a bounded function defined
+on the rectangle 
+<img src="int22.png" alt="int22.png" align=absmiddle>
+, then one defines for each subrectangle of 
+<img src="int23.png" alt="int23.png" align=absmiddle>
+ the functions:
+
+<P><CENTER>
+<img src="int24.png" alt="int24.png" align=absmiddle>
+</CENTER><P>
+
+Further, the <b>lower</b> and <upper sums> of 
+<img src="int25.png" alt="int25.png" align=absmiddle>
+ for the partition 
+<img src="int26.png" alt="int26.png" align=absmiddle>
+
+are defined to be
+
+<P><CENTER>
+<img src="int27.png" alt="int27.png" align=absmiddle>
+</CENTER><P>
+
+
+<p> The definitions have been constructed to make the following trivial, but
+crucial Lemma true.
+
+<p><b>Lemma 1:</b> With the notation as in Definition 1, every subrectangle
+of 
+<img src="int28.png" alt="int28.png" align=absmiddle>
+ is a union of finitely many subrectangles of 
+<img src="int29.png" alt="int29.png" align=absmiddle>
+ whose interiors are
+pairwise disjoint.  As a result, one has:
+
+<P><CENTER>
+<img src="int30.png" alt="int30.png" align=absmiddle>
+</CENTER><P>
+
+<p><b>Definition 2:</b> With the notation as in Definition 1, the <b>lower
+integral</b> (respectively <b>upper integral</b> of 
+<img src="int31.png" alt="int31.png" align=absmiddle>
+ on 
+<img src="int32.png" alt="int32.png" align=absmiddle>
+ is defined
+to be 
+<img src="int33.png" alt="int33.png" align=absmiddle>
+ (respectively
+
+<img src="int34.png" alt="int34.png" align=absmiddle>
+).  If 
+<img src="int35.png" alt="int35.png" align=absmiddle>
+,
+then 
+<img src="int36.png" alt="int36.png" align=absmiddle>
+ is called <b>integrable</b> with integral 
+<img src="int37.png" alt="int37.png" align=absmiddle>
+ equal to this
+common value.  Another notation for the integral is
+
+<img src="int38.png" alt="int38.png" align=absmiddle>
+
+
+<p><b>Proposition 1:</b> A bounded function 
+<img src="int39.png" alt="int39.png" align=absmiddle>
+ defined on
+a rectangle 
+<img src="int40.png" alt="int40.png" align=absmiddle>
+ is integrable if and only if for every 
+<img src="int41.png" alt="int41.png" align=absmiddle>
+,
+there is a partition 
+<img src="int42.png" alt="int42.png" align=absmiddle>
+ such that 
+<img src="int43.png" alt="int43.png" align=absmiddle>
+
+<p><b>Proof:</b> The condition is clearly sufficient.  On the other hand,
+if 
+<img src="int44.png" alt="int44.png" align=absmiddle>
+ is integrable and 
+<img src="int45.png" alt="int45.png" align=absmiddle>
+, then there are partitions 
+<img src="int46.png" alt="int46.png" align=absmiddle>
+ and
+
+<img src="int47.png" alt="int47.png" align=absmiddle>
+ such that
+
+<P><CENTER>
+<img src="int48.png" alt="int48.png" align=absmiddle>
+</CENTER><P>
+
+Let 
+<img src="int49.png" alt="int49.png" align=absmiddle>
+ be a refinement of both 
+<img src="int50.png" alt="int50.png" align=absmiddle>
+ and 
+<img src="int51.png" alt="int51.png" align=absmiddle>
+.  Then Lemma 1 implies that
+
+<img src="int52.png" alt="int52.png" align=absmiddle>
+ is a partition of the desired type.
+
+<p><b>Theorem 1:</b> (Fubini's Theorem) Let 
+<img src="int53.png" alt="int53.png" align=absmiddle>
+ and
+
+<img src="int54.png" alt="int54.png" align=absmiddle>
+ be closed rectangles and 
+<img src="int55.png" alt="int55.png" align=absmiddle>
+
+be integrable.  For 
+<img src="int56.png" alt="int56.png" align=absmiddle>
+, let 
+<img src="int57.png" alt="int57.png" align=absmiddle>
+ be defined by
+
+<img src="int58.png" alt="int58.png" align=absmiddle>
+ and let 
+<img src="int59.png" alt="int59.png" align=absmiddle>
+ and 
+<img src="int60.png" alt="int60.png" align=absmiddle>
+
+be defined by:
+
+<P><CENTER>
+<img src="int61.png" alt="int61.png" align=absmiddle>
+</CENTER><P>
+
+Then 
+<img src="int62.png" alt="int62.png" align=absmiddle>
+ and 
+<img src="int63.png" alt="int63.png" align=absmiddle>
+ are both integrable on 
+<img src="int64.png" alt="int64.png" align=absmiddle>
+ and
+
+<P><CENTER>
+<img src="int65.png" alt="int65.png" align=absmiddle>
+</CENTER><P>
+
+In other words, the double integral can be calculated as either of
+two iterated integrals:
+
+<P><CENTER>
+<img src="int66.png" alt="int66.png" align=absmiddle>
+</CENTER><P>
+
+<p><b>Proof:</b> This is mostly a matter of sorting out all the definitions.
+If 
+<img src="int67.png" alt="int67.png" align=absmiddle>
+ (respectively 
+<img src="int68.png" alt="int68.png" align=absmiddle>
+) is a partition of 
+<img src="int69.png" alt="int69.png" align=absmiddle>
+  (respectively 
+<img src="int70.png" alt="int70.png" align=absmiddle>
+), then
+
+<img src="int71.png" alt="int71.png" align=absmiddle>
+ is a partition of 
+<img src="int72.png" alt="int72.png" align=absmiddle>
+ with subrectangles of the
+form 
+<img src="int73.png" alt="int73.png" align=absmiddle>
+ where 
+<img src="int74.png" alt="int74.png" align=absmiddle>
+ is a subrectangle of 
+<img src="int75.png" alt="int75.png" align=absmiddle>
+ and 
+<img src="int76.png" alt="int76.png" align=absmiddle>
+ is a 
+subrectangle of 
+<img src="int77.png" alt="int77.png" align=absmiddle>
+.  
+<p>One has:
+
+<P><CENTER>
+<img src="int78.png" alt="int78.png" align=absmiddle>
+</CENTER><P>
+
+For 
+<img src="int79.png" alt="int79.png" align=absmiddle>
+, one has 
+<img src="int80.png" alt="int80.png" align=absmiddle>
+, and so
+
+<P><CENTER>
+<img src="int81.png" alt="int81.png" align=absmiddle>
+</CENTER><P>
+
+But then:
+
+<P><CENTER>
+<img src="int82.png" alt="int82.png" align=absmiddle>
+</CENTER><P>
+
+and so, combining results, we get:
+
+<P><CENTER>
+<img src="int83.png" alt="int83.png" align=absmiddle>
+</CENTER><P>
+
+<p>For the upper sums, one can argue analogously:
+
+<P><CENTER>
+<img src="int84.png" alt="int84.png" align=absmiddle>
+</CENTER><P>
+
+For 
+<img src="int85.png" alt="int85.png" align=absmiddle>
+, one has 
+<img src="int86.png" alt="int86.png" align=absmiddle>
+, and so
+
+<P><CENTER>
+<img src="int87.png" alt="int87.png" align=absmiddle>
+</CENTER><P>
+
+But then:
+
+<P><CENTER>
+<img src="int88.png" alt="int88.png" align=absmiddle>
+</CENTER><P>
+
+and so, combining results, we get:
+
+<P><CENTER>
+<img src="int89.png" alt="int89.png" align=absmiddle>
+</CENTER><P>
+
+<p> Combining the results for upper and lower sums:
+
+<P><CENTER>
+<img src="int90.png" alt="int90.png" align=absmiddle>
+</CENTER><P>
+
+Since 
+<img src="int91.png" alt="int91.png" align=absmiddle>
+ is integrable, 
+<P><CENTER>
+<img src="int92.png" alt="int92.png" align=absmiddle>
+</CENTER><P>
+
+and so 
+<img src="int93.png" alt="int93.png" align=absmiddle>
+ is integrable with integral equal to 
+<img src="int94.png" alt="int94.png" align=absmiddle>
+
+<p> A similar argument shows that
+
+<P><CENTER>
+<img src="int95.png" alt="int95.png" align=absmiddle>
+</CENTER><P>
+
+and so one gets 
+<img src="int96.png" alt="int96.png" align=absmiddle>
+ is integrable with integral 
+<img src="int97.png" alt="int97.png" align=absmiddle>
+,
+as desired.
+<p><b>Note:</b> By interchanging the roles of 
+<img src="int98.png" alt="int98.png" align=absmiddle>
+ and 
+<img src="int99.png" alt="int99.png" align=absmiddle>
+, one can show that
+the order in which the integrals are iterated does not affect the result.
+
+<H2>Extending the Integral: Characteristic Functions</H2>
+
+<p><b>Exercise 1:</b> State and prove a result which would make the following
+definition legitimate and reasonable.
+
+<p><b>Definition 3:</b> If 
+<img src="int100.png" alt="int100.png" align=absmiddle>
+, then its <b>characteristic
+function</b> 
+<img src="int101.png" alt="int101.png" align=absmiddle>
+ is defined by
+
+<P><CENTER>
+<img src="int102.png" alt="int102.png" align=absmiddle>
+</CENTER><P>
+
+If 
+<img src="int103.png" alt="int103.png" align=absmiddle>
+ where 
+<img src="int104.png" alt="int104.png" align=absmiddle>
+ is a closed rectangle, then a bounded function
+
+<img src="int105.png" alt="int105.png" align=absmiddle>
+ is said to be integrable with integral 
+<img src="int106.png" alt="int106.png" align=absmiddle>
+
+provided that this last quantity is defined.
+
+<p><b>Definition 4:</b> A subset 
+<img src="int107.png" alt="int107.png" align=absmiddle>
+ of 
+<img src="int108.png" alt="int108.png" align=absmiddle>
+ is said to be of
+<b>measure zero</b> (respectively <b>content zero</b>) if for every 
+<img src="int109.png" alt="int109.png" align=absmiddle>
+,
+there is a countable infinite (respectively finite) sequence 
+<img src="int110.png" alt="int110.png" align=absmiddle>
+
+of open rectangles which form a cover of 
+<img src="int111.png" alt="int111.png" align=absmiddle>
+ and such that 
+<img src="int112.png" alt="int112.png" align=absmiddle>
+
+
+<p><b>Exercise 2:</b> Show that, if we replace <i>open</i> with <i>closed</i>
+in Definition 4, the resulting definitions are equivalent.
+
+<p><b>Proposition 2:</b> (i) The union of a countable collection of sets of
+measure zero is also of measure zero.
+<p>(ii) A compact set is of measure zero if and only if it is of content zero.
+<p>(iii) A closed interval 
+<img src="int113.png" alt="int113.png" align=absmiddle>
+ with 
+<img src="int114.png" alt="int114.png" align=absmiddle>
+ is not of measure zero.
+<p><b>Proof:</b> (i) Suppose 
+<img src="int115.png" alt="int115.png" align=absmiddle>
+ is a countable sequence of
+sets of measure zero and 
+<img src="int116.png" alt="int116.png" align=absmiddle>
+.  Then 
+<img src="int117.png" alt="int117.png" align=absmiddle>
+ has an open cover by
+rectangles 
+<img src="int118.png" alt="int118.png" align=absmiddle>
+ such that 
+<img src="int119.png" alt="int119.png" align=absmiddle>
+
+Then clearly the 
+<img src="int120.png" alt="int120.png" align=absmiddle>
+ are a cover of the union of 
+<img src="int121.png" alt="int121.png" align=absmiddle>
+ and the sum of
+their volumes is less than 
+<img src="int122.png" alt="int122.png" align=absmiddle>
+ (why?).  To enumerate the 
+<img src="int123.png" alt="int123.png" align=absmiddle>
+, just
+list them out in order of increasing 
+<img src="int124.png" alt="int124.png" align=absmiddle>
+ keeping those with the same value of
+
+<img src="int125.png" alt="int125.png" align=absmiddle>
+ in order of increasing 
+<img src="int126.png" alt="int126.png" align=absmiddle>
+.
+<p>(ii> Clearly, the condition is sufficent.  On the other hand, if 
+<img src="int127.png" alt="int127.png" align=absmiddle>
+
+is compact and of measure 0, with an open covering 
+<img src="int128.png" alt="int128.png" align=absmiddle>
+ of open
+rectangles of total volume less than 
+<img src="int129.png" alt="int129.png" align=absmiddle>
+.  Then any finite subcover
+satisfies the same condition.  So 
+<img src="int130.png" alt="int130.png" align=absmiddle>
+ is also of content zero.
+<p>(iii) If 
+<img src="int131.png" alt="int131.png" align=absmiddle>
+ were of measure zero, it would be of content zero by
+part (ii).  Suppose 
+<img src="int132.png" alt="int132.png" align=absmiddle>
+ has a cover 
+<img src="int133.png" alt="int133.png" align=absmiddle>
+ by closed rectangles of
+total length less than 
+<img src="int134.png" alt="int134.png" align=absmiddle>
+.  We can replace the 
+<img src="int135.png" alt="int135.png" align=absmiddle>
+ with their
+intersections with 
+<img src="int136.png" alt="int136.png" align=absmiddle>
+ to show that the 
+<img src="int137.png" alt="int137.png" align=absmiddle>
+ can be assumed to be
+subintervals of 
+<img src="int138.png" alt="int138.png" align=absmiddle>
+.  But then the endpoints of the 
+<img src="int139.png" alt="int139.png" align=absmiddle>
+ can be arranged
+into increasing order to obtain a partition of
+<img src="int140.png" alt="int140.png" align=absmiddle>
+.  Each 
+<img src="int141.png" alt="int141.png" align=absmiddle>
+ is
+a union of certain of the subrectangles of this partition and so 
+
+<img src="int142.png" alt="int142.png" align=absmiddle>
+  So, if 
+<img src="int143.png" alt="int143.png" align=absmiddle>
+, the interval
+
+<img src="int144.png" alt="int144.png" align=absmiddle>
+ cannot be of content zero and so it is also not of measure zero.
+<p><b>Definition 5:</b> Let 
+<img src="int145.png" alt="int145.png" align=absmiddle>
+ be a bounded function and 
+<img src="int146.png" alt="int146.png" align=absmiddle>
+.
+Define the functions:
+
+<P><CENTER>
+<img src="int147.png" alt="int147.png" align=absmiddle>
+</CENTER><P>
+
+The <b>oscillation</b> 
+<img src="int148.png" alt="int148.png" align=absmiddle>
+ of 
+<img src="int149.png" alt="int149.png" align=absmiddle>
+ at 
+<img src="int150.png" alt="int150.png" align=absmiddle>
+ is defined to be
+
+<P><CENTER>
+<img src="int151.png" alt="int151.png" align=absmiddle>
+</CENTER><P>
+
+<p><b>Proposition 3:</b>(i) The bounded function 
+<img src="int152.png" alt="int152.png" align=absmiddle>
+ is continuous at 
+<img src="int153.png" alt="int153.png" align=absmiddle>
+ if
+and only if 
+<img src="int154.png" alt="int154.png" align=absmiddle>
+.
+<p>(ii) If 
+<img src="int155.png" alt="int155.png" align=absmiddle>
+ is closed, 
+<img src="int156.png" alt="int156.png" align=absmiddle>
+ is
+bounded, and 
+<img src="int157.png" alt="int157.png" align=absmiddle>
+, then 
+<img src="int158.png" alt="int158.png" align=absmiddle>
+
+is closed.
+<p>(iii) If 
+<img src="int159.png" alt="int159.png" align=absmiddle>
+ is a bounded function defined on a closed
+rectangle 
+<img src="int160.png" alt="int160.png" align=absmiddle>
+ and 
+<img src="int161.png" alt="int161.png" align=absmiddle>
+ for some 
+<img src="int162.png" alt="int162.png" align=absmiddle>
+, then
+there is a partition 
+<img src="int163.png" alt="int163.png" align=absmiddle>
+ of 
+<img src="int164.png" alt="int164.png" align=absmiddle>
+ such that 
+<img src="int165.png" alt="int165.png" align=absmiddle>
+
+<p><b>Proof:</b> (i)  Do this as an exercise.
+<p>(ii) If 
+<img src="int166.png" alt="int166.png" align=absmiddle>
+ is not in 
+<img src="int167.png" alt="int167.png" align=absmiddle>
+, then there is an open an open ball of radius 
+<img src="int168.png" alt="int168.png" align=absmiddle>
+
+about 
+<img src="int169.png" alt="int169.png" align=absmiddle>
+ which is disjoint from 
+<img src="int170.png" alt="int170.png" align=absmiddle>
+.  Using this ball, one can check that
+
+<img src="int171.png" alt="int171.png" align=absmiddle>
+  So 
+<img src="int172.png" alt="int172.png" align=absmiddle>
+.
+<p> Suppose 
+<img src="int173.png" alt="int173.png" align=absmiddle>
+ and 
+<img src="int174.png" alt="int174.png" align=absmiddle>
+.  Then 
+<img src="int175.png" alt="int175.png" align=absmiddle>
+.  Choose a 
+<img src="int176.png" alt="int176.png" align=absmiddle>
+
+such that 
+<img src="int177.png" alt="int177.png" align=absmiddle>
+.  Then for all
+
+<img src="int178.png" alt="int178.png" align=absmiddle>
+ such that 
+<img src="int179.png" alt="int179.png" align=absmiddle>
+, we have 
+<img src="int180.png" alt="int180.png" align=absmiddle>
+.
+and so 
+<img src="int181.png" alt="int181.png" align=absmiddle>
+.  Thus the complement of 
+<img src="int182.png" alt="int182.png" align=absmiddle>
+ is open and 
+<img src="int183.png" alt="int183.png" align=absmiddle>
+ is
+closed.
+<p>(iii) For each 
+<img src="int184.png" alt="int184.png" align=absmiddle>
+ there is a closed rectangle with 
+<img src="int185.png" alt="int185.png" align=absmiddle>
+ in its interior
+such that 
+<img src="int186.png" alt="int186.png" align=absmiddle>
+  Since 
+<img src="int187.png" alt="int187.png" align=absmiddle>
+ is compact, a
+finite number of these are such that their interiors cover 
+<img src="int188.png" alt="int188.png" align=absmiddle>
+.   Choose for 
+<img src="int189.png" alt="int189.png" align=absmiddle>
+
+any partition of 
+<img src="int190.png" alt="int190.png" align=absmiddle>
+ such that every subrectangle 
+<img src="int191.png" alt="int191.png" align=absmiddle>
+ of 
+<img src="int192.png" alt="int192.png" align=absmiddle>
+ is contained in one
+of these finitely many 
+<img src="int193.png" alt="int193.png" align=absmiddle>
+'s.  Then 
+<img src="int194.png" alt="int194.png" align=absmiddle>
+ for each 
+subrectangle 
+<img src="int195.png" alt="int195.png" align=absmiddle>
+.  It follows that 
+
+<P><CENTER>
+<img src="int196.png" alt="int196.png" align=absmiddle>
+</CENTER><P>
+
+
+<p><b>Theorem 2:</b> Let 
+<img src="int197.png" alt="int197.png" align=absmiddle>
+ be a bounded function defined
+on a closed rectangle 
+<img src="int198.png" alt="int198.png" align=absmiddle>
+ and let 
+<img src="int199.png" alt="int199.png" align=absmiddle>
+
+Then 
+<img src="int200.png" alt="int200.png" align=absmiddle>
+ is integrable if and only if 
+<img src="int201.png" alt="int201.png" align=absmiddle>
+ is a set of measure zero.
+
+<p><b>Proof:</b> Suppose 
+<img src="int202.png" alt="int202.png" align=absmiddle>
+ is integrable and 
+<img src="int203.png" alt="int203.png" align=absmiddle>
+.  For 
+<img src="int204.png" alt="int204.png" align=absmiddle>
+,
+choose a partition 
+<img src="int205.png" alt="int205.png" align=absmiddle>
+ of 
+<img src="int206.png" alt="int206.png" align=absmiddle>
+ such that 
+<img src="int207.png" alt="int207.png" align=absmiddle>
+. 
+Then the set of subrectangles 
+<img src="int208.png" alt="int208.png" align=absmiddle>
+ of 
+<img src="int209.png" alt="int209.png" align=absmiddle>
+ such that 
+<img src="int210.png" alt="int210.png" align=absmiddle>
+
+has total volume less than 
+<img src="int211.png" alt="int211.png" align=absmiddle>
+  If 
+<img src="int212.png" alt="int212.png" align=absmiddle>
+ is a point where the oscillation of
+
+<img src="int213.png" alt="int213.png" align=absmiddle>
+ is
+at least 
+<img src="int214.png" alt="int214.png" align=absmiddle>
+ and if 
+<img src="int215.png" alt="int215.png" align=absmiddle>
+ is in the interior of one of the subrectangles
+of 
+<img src="int216.png" alt="int216.png" align=absmiddle>
+, then 
+<img src="int217.png" alt="int217.png" align=absmiddle>
+.  Since the boundaries of the
+subrectangles of 
+<img src="int218.png" alt="int218.png" align=absmiddle>
+ is a set of measure zero, it follows that the set 
+<img src="int219.png" alt="int219.png" align=absmiddle>
+ of 
+<img src="int220.png" alt="int220.png" align=absmiddle>
+ with
+oscillation at least 
+<img src="int221.png" alt="int221.png" align=absmiddle>
+ must be a set of content (and hence measure) zero.  
+Since the set of discontuities of the function 
+<img src="int222.png" alt="int222.png" align=absmiddle>
+ is just the union of the
+countably many sets 
+<img src="int223.png" alt="int223.png" align=absmiddle>
+ for 
+<img src="int224.png" alt="int224.png" align=absmiddle>
+, it follows
+that the set of discontinuities of 
+<img src="int225.png" alt="int225.png" align=absmiddle>
+ is also of measure zero.
+<p>Now, suppose that the set of discontinuities of 
+<img src="int226.png" alt="int226.png" align=absmiddle>
+ is of measure 0.
+As before, let 
+<img src="int227.png" alt="int227.png" align=absmiddle>
+ be the set of 
+<img src="int228.png" alt="int228.png" align=absmiddle>
+ satisfying 
+<img src="int229.png" alt="int229.png" align=absmiddle>
+
+Since 
+<img src="int230.png" alt="int230.png" align=absmiddle>
+ is compact by Proposition 3 and 
+<img src="int231.png" alt="int231.png" align=absmiddle>
+ is of
+measure zero, 
+<img src="int232.png" alt="int232.png" align=absmiddle>
+ is of content zero.  In particular, there is
+a finite set of closed rectangles whose interiors cover 
+<img src="int233.png" alt="int233.png" align=absmiddle>
+ and such that their
+total volume is at most 
+<img src="int234.png" alt="int234.png" align=absmiddle>
+.  First choose a partition 
+<img src="int235.png" alt="int235.png" align=absmiddle>
+ of 
+<img src="int236.png" alt="int236.png" align=absmiddle>
+ such
+that every subrectangle of 
+<img src="int237.png" alt="int237.png" align=absmiddle>
+ is either completely contained with one of
+the finitely many rectangles or else its interior is disjoint from all of these
+rectangles.  For each rectangle of the first type, one has 
+<img src="int238.png" alt="int238.png" align=absmiddle>
+
+where 
+<img src="int239.png" alt="int239.png" align=absmiddle>
+ is an upper bound for |f(x)| for all 
+<img src="int240.png" alt="int240.png" align=absmiddle>
+.  
+For each subrectangle S of the second type, one can use Proposition 3(iii)
+to find a partition of the subrectangle such that the difference between
+the upper and lower sums on this subrectangle is at most 
+<img src="int241.png" alt="int241.png" align=absmiddle>
+.
+Now replace P with a refinement of each of these partitions.  Then we
+have 
+<img src="int242.png" alt="int242.png" align=absmiddle>
+.
+By making 
+<img src="int243.png" alt="int243.png" align=absmiddle>
+
+sufficiently small, we can make this sum as small as we like, and so 
+<img src="int244.png" alt="int244.png" align=absmiddle>
+
+is integrable.
+
+<p><b>Corollary 1:</b> Let 
+<img src="int245.png" alt="int245.png" align=absmiddle>
+ be a bounded set.  Then
+its characteristic function 
+<img src="int246.png" alt="int246.png" align=absmiddle>
+ is
+integrable if and only if the boundary of 
+<img src="int247.png" alt="int247.png" align=absmiddle>
+ is of measure zero.
+<p><b>Proof:</b> Apply Theorem 2 given that the set of discontinuities of
+
+<img src="int248.png" alt="int248.png" align=absmiddle>
+ is precisely the boundary of 
+<img src="int249.png" alt="int249.png" align=absmiddle>
+.
+
+<p><b>Definition 6:</b> A bounded set 
+<img src="int250.png" alt="int250.png" align=absmiddle>
+ is called
+<b>Jordan measurable</b> if its boundary is of measure zero.  In this
+case, the integral of its characteristic function is called
+the <b>content</b> of 
+<img src="int251.png" alt="int251.png" align=absmiddle>
+ or its (n-dimensional) <b>volume</b>.
+<p><b>Note:</b> Although our extension was defined in a natural way, it
+is not quite adequate.  Indeed, we have seen that there are open
+subsets of 
+<img src="int252.png" alt="int252.png" align=absmiddle>
+ whose boundaries are not of measure zero.  So even
+constant functions on open sets might not be integrable.  This is why we
+need the next section.
+<H2>Extending the Integral: Partitions of Unity</H2>
+<p> The goal of this section is to define an integral for functions defined
+on open sets.  This is based on a technical result:
+<p><b>Theorem 3:</b> (Partitions of Unity) Let 
+<img src="int253.png" alt="int253.png" align=absmiddle>
+ be an open cover
+of a subset 
+<img src="int254.png" alt="int254.png" align=absmiddle>
+  There is a set 
+<img src="int255.png" alt="int255.png" align=absmiddle>
+ of 
+<img src="int256.png" alt="int256.png" align=absmiddle>
+
+function 
+<img src="int257.png" alt="int257.png" align=absmiddle>
+ defined in an open set containing 
+<img src="int258.png" alt="int258.png" align=absmiddle>
+ and satifying:
+<ol>
+<li> For each 
+<img src="int259.png" alt="int259.png" align=absmiddle>
+, one has 
+<img src="int260.png" alt="int260.png" align=absmiddle>
+ and
+
+<img src="int261.png" alt="int261.png" align=absmiddle>
+ where the sum is defined because
+for every such 
+<img src="int262.png" alt="int262.png" align=absmiddle>
+ there is an open set 
+<img src="int263.png" alt="int263.png" align=absmiddle>
+ containing 
+<img src="int264.png" alt="int264.png" align=absmiddle>
+ where there
+are but finitely many 
+<img src="int265.png" alt="int265.png" align=absmiddle>
+ such that 
+<img src="int266.png" alt="int266.png" align=absmiddle>
+.
+<li> For each 
+<img src="int267.png" alt="int267.png" align=absmiddle>
+, there is a 
+<img src="int268.png" alt="int268.png" align=absmiddle>
+ such that
+
+<img src="int269.png" alt="int269.png" align=absmiddle>
+ outside of some compact set contained in 
+<img src="int270.png" alt="int270.png" align=absmiddle>
+.
+</ol>
+<p><b>Definition 7:</b> A set 
+<img src="int271.png" alt="int271.png" align=absmiddle>
+ of functions satisfying condition (1)
+of Theorem 3 is called a 
+<img src="int272.png" alt="int272.png" align=absmiddle>
+<b>partition of unity</b> of 
+<img src="int273.png" alt="int273.png" align=absmiddle>
+.  When
+both conditions are satisfied, we call 
+<img src="int274.png" alt="int274.png" align=absmiddle>
+ a partition of unity of 
+<img src="int275.png" alt="int275.png" align=absmiddle>
+
+<b>subordinate</b> to the cover 
+<img src="int276.png" alt="int276.png" align=absmiddle>
+
+
+<p><b>Lemma 1:</b> (i) If 
+<img src="int277.png" alt="int277.png" align=absmiddle>
+ is a compact subset of an open set
+
+<img src="int278.png" alt="int278.png" align=absmiddle>
+.  Then there is a compact subset 
+<img src="int279.png" alt="int279.png" align=absmiddle>
+ of 
+<img src="int280.png" alt="int280.png" align=absmiddle>
+ such that 
+<img src="int281.png" alt="int281.png" align=absmiddle>
+ is contained in the
+interior of 
+<img src="int282.png" alt="int282.png" align=absmiddle>
+.
+<p>(ii) If 
+<img src="int283.png" alt="int283.png" align=absmiddle>
+ is a compact subset of an open set 
+<img src="int284.png" alt="int284.png" align=absmiddle>
+, then there is a
+
+<img src="int285.png" alt="int285.png" align=absmiddle>
+ function 
+<img src="int286.png" alt="int286.png" align=absmiddle>
+ such that 
+<img src="int287.png" alt="int287.png" align=absmiddle>
+ on all of 
+<img src="int288.png" alt="int288.png" align=absmiddle>
+
+and such 
+<img src="int289.png" alt="int289.png" align=absmiddle>
+ outside of a compact subset of 
+<img src="int290.png" alt="int290.png" align=absmiddle>
+.  In fact, 
+<img src="int291.png" alt="int291.png" align=absmiddle>
+ can
+be chosen so it maps into 
+<img src="int292.png" alt="int292.png" align=absmiddle>
+ and such that 
+<img src="int293.png" alt="int293.png" align=absmiddle>
+ for all 
+<img src="int294.png" alt="int294.png" align=absmiddle>
+.
+<p><b>Proof:</b> This is just Exercises 1-22 and 2-26.
+<p><b>Proof:</b> (of Theorem 3) <b>Case 1:</b> First, consider the case in which 
+<img src="int295.png" alt="int295.png" align=absmiddle>
+ is compact.
+Replace 
+<img src="int296.png" alt="int296.png" align=absmiddle>
+ with a finite subcover of 
+<img src="int297.png" alt="int297.png" align=absmiddle>
+, say 
+<img src="int298.png" alt="int298.png" align=absmiddle>
+.
+<p><b>Claim:</b> There are compact sets 
+<img src="int299.png" alt="int299.png" align=absmiddle>
+ whose interiors cover
+
+<img src="int300.png" alt="int300.png" align=absmiddle>
+ and such that 
+<img src="int301.png" alt="int301.png" align=absmiddle>
+ for every 
+<img src="int302.png" alt="int302.png" align=absmiddle>
+
+<p><b>Proof:</b> We make an inductive definition.  Suppose, we have
+already chosen 
+<img src="int303.png" alt="int303.png" align=absmiddle>
+ such that the union of the their interiors and
+the sets 
+<img src="int304.png" alt="int304.png" align=absmiddle>
+ contains 
+<img src="int305.png" alt="int305.png" align=absmiddle>
+.   Let
+
+<P><CENTER>
+<img src="int306.png" alt="int306.png" align=absmiddle>
+</CENTER><P>
+
+Then 
+<img src="int307.png" alt="int307.png" align=absmiddle>
+ is a compact subset of 
+<img src="int308.png" alt="int308.png" align=absmiddle>
+  By Lemma 1 (i), there
+is a compact set 
+<img src="int309.png" alt="int309.png" align=absmiddle>
+ contained in 
+<img src="int310.png" alt="int310.png" align=absmiddle>
+ and containing 
+<img src="int311.png" alt="int311.png" align=absmiddle>
+ in
+its interior.  This completes the induction.
+<p> By Lemma 1 (ii), there are 
+<img src="int312.png" alt="int312.png" align=absmiddle>
+ functions 
+<img src="int313.png" alt="int313.png" align=absmiddle>
+ which are
+positive on 
+<img src="int314.png" alt="int314.png" align=absmiddle>
+ and which are zero outside of some compact subset of 
+<img src="int315.png" alt="int315.png" align=absmiddle>
+.
+Then 
+<img src="int316.png" alt="int316.png" align=absmiddle>
+ for 
+<img src="int317.png" alt="int317.png" align=absmiddle>
+ in an open set 
+<img src="int318.png" alt="int318.png" align=absmiddle>
+ containing 
+
+<img src="int319.png" alt="int319.png" align=absmiddle>
+.  Define functions 
+<img src="int320.png" alt="int320.png" align=absmiddle>
+ by
+
+<P><CENTER>
+<img src="int321.png" alt="int321.png" align=absmiddle>
+</CENTER><P>
+
+Now, choose a 
+<img src="int322.png" alt="int322.png" align=absmiddle>
+ function 
+<img src="int323.png" alt="int323.png" align=absmiddle>
+ such that
+
+<img src="int324.png" alt="int324.png" align=absmiddle>
+ for 
+<img src="int325.png" alt="int325.png" align=absmiddle>
+ and such that
+
+<img src="int326.png" alt="int326.png" align=absmiddle>
+ outside of a compact set contained in 
+<img src="int327.png" alt="int327.png" align=absmiddle>
+.  Then the functions
+
+<img src="int328.png" alt="int328.png" align=absmiddle>
+ is the desired partition
+of unity.
+<p> <b>Case 2:</b> Now, let's prove the result in case 
+<img src="int329.png" alt="int329.png" align=absmiddle>
+ where
+each 
+<img src="int330.png" alt="int330.png" align=absmiddle>
+ is compact and contained in the interior of 
+<img src="int331.png" alt="int331.png" align=absmiddle>
+.  To see
+this, note that the compact set 
+<img src="int332.png" alt="int332.png" align=absmiddle>
+ has an open cover
+
+<img src="int333.png" alt="int333.png" align=absmiddle>
+
+So, our previous case shows that there is a partition of unity 
+<img src="int334.png" alt="int334.png" align=absmiddle>
+ for 
+
+<img src="int335.png" alt="int335.png" align=absmiddle>
+ subordinate to 
+<img src="int336.png" alt="int336.png" align=absmiddle>
+  Now 
+<img src="int337.png" alt="int337.png" align=absmiddle>
+
+is a finite sum in some open set containing 
+<img src="int338.png" alt="int338.png" align=absmiddle>
+ and so we can take as our
+partition of unity the set of all the 
+<img src="int339.png" alt="int339.png" align=absmiddle>
+ for all
+
+<img src="int340.png" alt="int340.png" align=absmiddle>
+ for all 
+<img src="int341.png" alt="int341.png" align=absmiddle>
+.
+<p> <b>Case 3:</b> Suppose now that 
+<img src="int342.png" alt="int342.png" align=absmiddle>
+ is an open set.  This case follows
+from the previous one by letting 
+<img src="int343.png" alt="int343.png" align=absmiddle>
+ be the set of 
+<img src="int344.png" alt="int344.png" align=absmiddle>
+ such that
+
+<img src="int345.png" alt="int345.png" align=absmiddle>
+ and the distance from 
+<img src="int346.png" alt="int346.png" align=absmiddle>
+ to the boundary of 
+<img src="int347.png" alt="int347.png" align=absmiddle>
+ is at least
+
+<img src="int348.png" alt="int348.png" align=absmiddle>
+.  The general case is now evident; one can simply replace the set 
+<img src="int349.png" alt="int349.png" align=absmiddle>
+
+with the union of all the open subsets 
+<img src="int350.png" alt="int350.png" align=absmiddle>
+ in 
+<img src="int351.png" alt="int351.png" align=absmiddle>
+.
+
+<p><b>Definition 8:</b> An open cover 
+<img src="int352.png" alt="int352.png" align=absmiddle>
+ of a set 
+<img src="int353.png" alt="int353.png" align=absmiddle>
+
+is called <b>admissible</b> if each element of 
+<img src="int354.png" alt="int354.png" align=absmiddle>
+ is contained in
+
+<img src="int355.png" alt="int355.png" align=absmiddle>
+.  Let 
+<img src="int356.png" alt="int356.png" align=absmiddle>
+ be a function and 
+<img src="int357.png" alt="int357.png" align=absmiddle>
+
+be admissible for 
+<img src="int358.png" alt="int358.png" align=absmiddle>
+ (and so 
+<img src="int359.png" alt="int359.png" align=absmiddle>
+ is open). Then 
+<img src="int360.png" alt="int360.png" align=absmiddle>
+ is said to be
+<b>integrable in the extended sense</b> with integral 
+<img src="int361.png" alt="int361.png" align=absmiddle>
+ provided that the terms of
+the series are defined and
+
+<img src="int362.png" alt="int362.png" align=absmiddle>
+ is convergent.
+
+<p><b>Theorem 4:</b> Let 
+<img src="int363.png" alt="int363.png" align=absmiddle>
+ be a partition of unity subordinate to an
+admissible cover 
+<img src="int364.png" alt="int364.png" align=absmiddle>
+ of an
+open set 
+<img src="int365.png" alt="int365.png" align=absmiddle>
+ and 
+<img src="int366.png" alt="int366.png" align=absmiddle>
+ be a function integrable in the
+extended sense (as defined using this this particular 
+<img src="int367.png" alt="int367.png" align=absmiddle>
+).  
+<ol>
+<li> If 
+<img src="int368.png" alt="int368.png" align=absmiddle>
+ is another partition of unity subordinate to an admissible
+cover 
+<img src="int369.png" alt="int369.png" align=absmiddle>
+ of 
+<img src="int370.png" alt="int370.png" align=absmiddle>
+, then 
+<img src="int371.png" alt="int371.png" align=absmiddle>
+
+is convergent and
+
+<P><CENTER>
+<img src="int372.png" alt="int372.png" align=absmiddle>
+</CENTER><P>
+
+<li> If 
+<img src="int373.png" alt="int373.png" align=absmiddle>
+ and 
+<img src="int374.png" alt="int374.png" align=absmiddle>
+ are bounded and the set of discontinuities of 
+<img src="int375.png" alt="int375.png" align=absmiddle>
+
+is a set of measure zero, then 
+<img src="int376.png" alt="int376.png" align=absmiddle>
+ is integrable in the extended sense.
+<li> If 
+<img src="int377.png" alt="int377.png" align=absmiddle>
+ is Jordan-measurable and 
+<img src="int378.png" alt="int378.png" align=absmiddle>
+ is bounded, then the extended
+definition of 
+<img src="int379.png" alt="int379.png" align=absmiddle>
+ agrees with the earlier definition of 
+<img src="int380.png" alt="int380.png" align=absmiddle>
+.
+<p><b>Proof:</b> (i) For 
+<img src="int381.png" alt="int381.png" align=absmiddle>
+, 
+<img src="int382.png" alt="int382.png" align=absmiddle>
+ except on
+a compact set 
+<img src="int383.png" alt="int383.png" align=absmiddle>
+ dependent on 
+<img src="int384.png" alt="int384.png" align=absmiddle>
+.  For each 
+<img src="int385.png" alt="int385.png" align=absmiddle>
+, there is an
+open set containing 
+<img src="int386.png" alt="int386.png" align=absmiddle>
+ on which there are at most finitely many 
+<img src="int387.png" alt="int387.png" align=absmiddle>
+
+which are non-zero at some point in the open set.  These open sets cover 
+<img src="int388.png" alt="int388.png" align=absmiddle>
+
+and so there is a finite subcover; hence there are only finitely many
+
+<img src="int389.png" alt="int389.png" align=absmiddle>
+ whose restrictions to 
+<img src="int390.png" alt="int390.png" align=absmiddle>
+ are not identically zero.  One has
+
+<P><CENTER>
+<img src="int391.png" alt="int391.png" align=absmiddle>
+</CENTER><P>
+
+In particular, the right hand side converges.  Absolute convergence implies
+that we can re-arrange the series on the right as
+
+<P><CENTER>
+<img src="int392.png" alt="int392.png" align=absmiddle>
+</CENTER><P>
+  A similar argument shows
+that the same identities hold when the absolute values are removed.
+<p>(ii)  Suppose 
+<img src="int393.png" alt="int393.png" align=absmiddle>
+ for some closed rectangle 
+<img src="int394.png" alt="int394.png" align=absmiddle>
+ and that
+
+<img src="int395.png" alt="int395.png" align=absmiddle>
+ for some 
+<img src="int396.png" alt="int396.png" align=absmiddle>
+ and all 
+<img src="int397.png" alt="int397.png" align=absmiddle>
+.  Then for any finite
+subset 
+<img src="int398.png" alt="int398.png" align=absmiddle>
+, one has
+
+<P><CENTER>
+<img src="int399.png" alt="int399.png" align=absmiddle>
+</CENTER><P>
+
+<p>(iii) If 
+<img src="int400.png" alt="int400.png" align=absmiddle>
+ is Jordan-measurable and 
+<img src="int401.png" alt="int401.png" align=absmiddle>
+, then there is
+a compact Jordan-measurable set 
+<img src="int402.png" alt="int402.png" align=absmiddle>
+ such that 
+<img src="int403.png" alt="int403.png" align=absmiddle>
+.
+For any finite set 
+<img src="int404.png" alt="int404.png" align=absmiddle>
+ containing all the 
+<img src="int405.png" alt="int405.png" align=absmiddle>
+ which
+are not identically zero on 
+<img src="int406.png" alt="int406.png" align=absmiddle>
+, one has:
+
+<P><CENTER>
+<img src="int407.png" alt="int407.png" align=absmiddle>
+</CENTER><P>
+
+</BODY>
+</HTML>

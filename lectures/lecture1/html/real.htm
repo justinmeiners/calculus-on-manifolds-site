@@ -1,0 +1,294 @@
+<HTML>
+<HEAD>
+<TITLE>Lecture 1: Real Numbers</TITLE>
+</HEAD>
+<body bgcolor=#ffffff>
+<CENTER>
+<H1>Lecture 1: The Real Numbers</H1>
+</CENTER>
+<H2>1.1 What Are They?</H2>
+<p> This course will deal with multivariate calculus, basically the
+analytical study of regions of n-dimensional real space.  Before considering
+this, we should review what we mean by the term 'real numbers'.
+
+<p>The basic idea is that the real numbers are the elements of the set of
+real numbers.  However, a set is just a set; something about which we can
+take subsets and do other set theoretic operations.   In order to understand
+this, we need to consider the set of real numbers as something with more
+structure.  The set of real numbers is actually a complete ordered field.
+<p> Let us pause to describe what this means:
+<p><b>Definition 1:</b> A field is a triple (F, +, *) where F is a set
+and + and * are binary operators (called addition and multiplication)
+which satisfy the following axioms:
+<ol>
+<li> Both addition and multiplication are commutative and associative
+and multiplication is distributive over addition.  In symbols, this means 
+that for all a, b, and c in F, one has:
+<ol>
+<li> a + b = b + a, a*b = b*a
+<li> (a + b) + c = a + (b + c), (a*b)*c = a*(b*c)
+<li> a*(b + c) = a*b + a*c
+</ol>
+<li> (Identities) There are two different elements 0 and 1 (called zero and one) in F
+such that for all a in F: a + 0 = a and a*1 = a.
+<li> (Inverses) For every a in F, there is at least one b in F such that a + b = 0.
+Further, if a is non-zero, there is at least one c in F such that a*b = 1.
+The elements b (respectively c) are called the additive (respectively the
+multiplicative) inverses of a and are denoted -a (respectively 1/a).
+</ol>
+
+<p><b>Definition 2:</b> An ordered field is a pair ((F, +, *), <)  where
+(F, +, *) is a field and < is binary relation on F such that:
+<ol>
+<li> (Transitivity) For every a, b, c in F, if a < b and b < c, then a < c.
+<li> (Trichotomy) For every a and b in F, exactly one of the following holds:
+<ol>
+<li> a < b
+<li> a = b
+<li> b < a
+</ol>
+<li> For all a, b, and c in F, if a < b, then a + c < b + c.
+Further, if c > 0, then a*c < b*c.
+</ol>
+
+<p>It is assumed that you have probably already had a course in which
+you showed that most of the standard rules of algebra follow from the
+assumption that one has an ordered field.  (If you haven't ever done this
+before, then take home and work through Landau's <i>Foundations of Analysis</i>;
+he will show you in a weekend read how to derive the basic properties of
+the real numbers starting from Peano postulates.  Just for practice, however,
+you might try to show:
+<p><b>Exercise 1</b> In any field, additive and multiplicative identities
+and inverses are unique. In an ordered field, if a < b and c < 0,
+then b*c < a*c.
+
+<p><b>Definition 3:</b> A subset S of an ordered field F is bounded above
+by an element a in F if b < a for all b in S.  The upper bound a is called
+a least upper bound for S if every other upper bound of S is larger than a.
+<p><b>Definition 4:</b> An ordered field F is said to be complete if every
+subset S of F which has an upper bound, also has a least upper bound.
+
+<p><b>Exercise 2:</b> Show that least upper bounds are unique.  Mimic
+the above definition to define lower bounds and greatest lower bounds.
+Show that in complete fields, every set S with a lower bound has a
+greatest lower bound.
+
+<p> It is useful to have the notion of complete ordered field in order to
+sort out some basic properties of real numbers.  But the real value is
+that these assumptions alone are enough to completely characterize the
+real numbers.  The result is expressed in terms of:
+<p><b>Definition 5:</b> An order isomorphism between two ordered fields
+((F,+,*),<) and ((G,+,*),<) is a 1-1 and onto map f:F ->G such that for all
+a and b in f, one has:
+<ol>
+<li> f(a + b) = f(a) + f(b)
+<li> f(a*b) = f(a)*f(b)
+<li> If a < b, then f(a) < f(b).
+</ol>
+
+<p> So basically, two ordered fields are order isomorphic if we cannot
+distinguish between them by using their addition and multiplication operations
+and their order relation.  In these terms the basic result is:
+<p><b>Theorem 1:</b> There is a complete ordered field and any two
+complete ordered fields are order isomorphic.
+<p> This result will not be proved here, but is found in algebra books.
+Here are some of the ideas of a proof:
+<ol>
+<li> Using the elements 0 and 1, one can build up the integers through
+addition, and then one can take quotients to get the rational numbers Q.
+<li> Define a sequence 
+<img src="real1.jpg" alt="real1.jpg" align=absmiddle>
+ of elements of an ordered field
+to be a Cauchy sequence if for every 
+<img src="real2.jpg" alt="real2.jpg" align=absmiddle>
+, there is an n such
+that for any i, j greater than n, one has 
+<img src="real3.jpg" alt="real3.jpg" align=absmiddle>
+.  We
+say that the sequence 
+<img src="real4.jpg" alt="real4.jpg" align=absmiddle>
+ has limit x if for every
+
+<img src="real5.jpg" alt="real5.jpg" align=absmiddle>
+, there is an n such that for every i > n, one has 
+<img src="real6.jpg" alt="real6.jpg" align=absmiddle>
+.
+<li> Two sequences 
+<img src="real7.jpg" alt="real7.jpg" align=absmiddle>
+ and 
+<img src="real8.jpg" alt="real8.jpg" align=absmiddle>
+ are said
+to be equivalent if the sequence 
+<img src="real9.jpg" alt="real9.jpg" align=absmiddle>
+ has limit
+0.  You can show that this is an equivalence relation.
+<li> If 
+<img src="real10.jpg" alt="real10.jpg" align=absmiddle>
+ and 
+<img src="real11.jpg" alt="real11.jpg" align=absmiddle>
+ are Cauchy sequences,
+then adding or multiplying corresponding terms gives new Cauchy sequences.
+Similarly, taking additive inverses gives a Cauchy sequence and so does
+taking multiplicative inverses if the original sequence has a non-zero limit
+and none of the elements are zero.
+<li> So that equivalence is preserved under addition and multiplication
+of Cauchy sequences.
+<li> Take the set S of Cauchy sequences with elements in the rational
+numbers Q.  The set of equivalence classes of such sequences can be shown
+to be a complete ordered field.
+</ol>
+<H2>1.2 The Cauchy-Schwartz Inequality</H2>
+<p> Henceforth, let use let 
+<img src="real12.jpg" alt="real12.jpg" align=absmiddle>
+ denote the real numbers, i.e. the
+set part of a complete ordered field.  By taking n-tuples of real
+numbers we get n-dimensional real space, denoted 
+<img src="real13.jpg" alt="real13.jpg" align=absmiddle>
+; its elements are
+called points.  The points are demoted 
+<img src="real14.jpg" alt="real14.jpg" align=absmiddle>
+ or simply
+(x^i).  Points can be added componentwise and we can multiply a real
+number  by a point  to get another point whose coordinates are just
+the original coordinates multiplied by the real number.  Of course, this
+makes 
+<img src="real15.jpg" alt="real15.jpg" align=absmiddle>
+ into an n-dimensional vector space.  But, we can also
+define a dot product:
+
+<P><CENTER>
+<img src="real16.jpg" alt="real16.jpg" align=absmiddle>
+</CENTER><P>
+
+As usual, this allows us to define the length of a point as the square root
+of the dot product of the point with itself:
+
+<P><CENTER>
+<img src="real17.jpg" alt="real17.jpg" align=absmiddle>
+</CENTER><P>
+
+
+Now the length function behaves like you would expect.  For example:
+<p><b>Proposition 1</b> (Triangle Inequality) For any two points x and y
+in 
+<img src="real18.jpg" alt="real18.jpg" align=absmiddle>
+, one has
+
+<P><CENTER>
+<img src="real19.jpg" alt="real19.jpg" align=absmiddle>
+</CENTER><P>
+
+<p><b>Proof:</b>  Squaring both sides, we see this amounts to showing that
+
+<P><CENTER>
+<img src="real20.jpg" alt="real20.jpg" align=absmiddle>
+</CENTER><P>
+
+is at most
+
+<P><CENTER>
+<img src="real21.jpg" alt="real21.jpg" align=absmiddle>
+</CENTER><P>
+
+Comparing terms, we see that the triangle inequality is equivalent to:
+<p><b>Proposition 2</b> (Cauchy-Schwartz Inequality) For any two points x and
+y in 
+<img src="real22.jpg" alt="real22.jpg" align=absmiddle>
+, one has 
+<img src="real23.jpg" alt="real23.jpg" align=absmiddle>
+, i.e.
+
+<P><CENTER>
+<img src="real24.jpg" alt="real24.jpg" align=absmiddle>
+</CENTER><P>
+
+<p><b>Exercise 3:</b> Draw a picture in the case n = 2 and identify various
+factors of the left hand side divided by the right to convince yourself that
+the result is basically equivalent to the addition formula for cosines.
+<p> Recall from your calculus course, that the dot product was shown to be:
+
+<P><CENTER>
+<img src="real25.jpg" alt="real25.jpg" align=absmiddle>
+</CENTER><P>
+
+where 
+<img src="real26.jpg" alt="real26.jpg" align=absmiddle>
+ is the angle between the vectors from the origin to the points
+x and y respectively.  This was probably only shown in the case n = 2; but
+it is another way of understanding why Proposition 2 should be true.  In
+our case, we will actually do things in the opposite direction, i.e. prove
+that Proposition 2 is true and use it to define the angle 
+<img src="real27.jpg" alt="real27.jpg" align=absmiddle>
+.
+<p>The main use of the dot product in Calculus was to give you the means of
+calculating the projection of one vector on another.  Using this interpretation,
+can you see why Proposition 2 should be true?
+<p>Given two vectors (i.e. two points) x and y, if we subtract from x the
+vector projection p of x on y, then we get a vector perpendicular to y.  Now,
+geometrically, this vector should be smallest vector amongst all vectors of
+the form 
+<img src="real28.jpg" alt="real28.jpg" align=absmiddle>
+ for all possible real 
+<img src="real29.jpg" alt="real29.jpg" align=absmiddle>
+.  Geometrically,
+we have `solved' the problem: Minimize 
+<img src="real30.jpg" alt="real30.jpg" align=absmiddle>
+.  
+<p> Ahh! we are finally doing calculus!
+<p> So let's do calculus:  To minimize this, we should minimize the square,
+
+<P><CENTER>
+<img src="real31.jpg" alt="real31.jpg" align=absmiddle>
+</CENTER><P>
+
+If x or y is zero, this is easy (What is the answer?); so assume both are
+non-zero.  Now, if think of x and y as being constants, then this is just
+a parabola.  So, either from your knowledge of parabolas or from elementary
+calculus, it is easy to see when this is minimized:  Setting the derivative
+to zero gives 
+<img src="real32.jpg" alt="real32.jpg" align=absmiddle>
+.  Substituting back shows that
+the minimum value is
+
+<img src="real33.jpg" alt="real33.jpg" align=absmiddle>
+.  Since this minimum value is non-negative, we
+have just proved Proposition 2.
+<p><b>A slight variant:</b> We know that the expression on the right side of
+the displayed formula must be positive unless x is a multiple of y.  But,
+if it is positive for all values of 
+<img src="real34.jpg" alt="real34.jpg" align=absmiddle>
+, then the roots must both
+be complex and so the discriminant is negative.  But this is precisely
+the Cauchy-Schwartz inequality.
+<p><b>Remark:</b> Make sure you sort out all the geometry from the proof to
+be sure we really have a proof here and not just heuristic hand waving.
+When you have done this, compare to the proof in Spivak -- hopefully,
+then you will understand his very slick proof.
+<p><b>Another approach entirely</b> Let's go back to the notion of angle
+between two vectors.  Along with the dot product, you had a vector cross
+product in the case of 
+<img src="real35.jpg" alt="real35.jpg" align=absmiddle>
+.  It gave you a vector that was perpendicular
+to the original two vectors, say v and w, and its length was precisely 
+
+<img src="real36.jpg" alt="real36.jpg" align=absmiddle>
+.  It could also be calculated as the value of the
+determinant of a strange looking matrix in which the top row had the
+unit vectors i, j, and k in the coordinate axis directions and the other
+two rows had the coordinates of v and w respectively.  Remember the
+formula:
+
+<P><CENTER>
+<img src="real37.jpg" alt="real37.jpg" align=absmiddle>
+</CENTER><P>
+
+(If not, then it is time to prove it -- yes, the Pythagorean Theorem in
+its many guises, including trigonometry, is your best friend.)
+<p> Identities are mysterious and wonderful.  If you write the above in
+terms of all the coordinates, then you simply have an algebraic identity.
+<p><b>Exercise 4:</b> Use the above identity to prove the Cauchy-Schwartz
+inequality.  Now generalize it to n dimensions and get another proof of
+Proposition 2.
+
+</BODY>
+</HTML>
